@@ -233,9 +233,9 @@
       <OwnMembers>
         <Member Name="AbsenceHours" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
         <Member Name="CalendarDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
-        <Member Name="EndTime" DisplayFormat="{0:hh:mm tt}" EditMask="t" />
-        <Member Name="StartDate" EditMask="dd/MM/yyyy" DisplayFormat="{0:dd/MM/yyyy}" />
-        <Member Name="StartTime" EditMaskType="DateTime" EditMask="t" DisplayFormat="{0:hh:mm tt}" />
+        <Member Name="EndTime" />
+        <Member Name="StartDate" />
+        <Member Name="StartTime" EditMaskType="DateTime" />
         <Member Name="TotalLeaveDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
       </OwnMembers>
     </Class>
