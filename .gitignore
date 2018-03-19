@@ -2,6 +2,7 @@ Contents/
 Images/
 Web.Config
 eXpressAppFramework.log
+login.aspx
 bin/
 !/bin/HCM10.Web.dll
 !/bin/HCM10.PayrollEngine.dll
