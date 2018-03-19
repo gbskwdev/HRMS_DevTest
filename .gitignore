@@ -2,3 +2,10 @@ Contents/
 Images/
 Web.Config
 eXpressAppFramework.log
+bin/
+
+!/bin/HCM10.Web.dll
+!/bin/HCM10.PayrollEngine.dll
+!/bin/HCM10.TimeEngine.dll
+!/bin/HCM10.Module.Web.dll
+!/bin/HCM10.Module.dll
