@@ -3,7 +3,6 @@ Images/
 Web.Config
 eXpressAppFramework.log
 bin/
-
 !/bin/HCM10.Web.dll
 !/bin/HCM10.PayrollEngine.dll
 !/bin/HCM10.TimeEngine.dll

@@ -17,6 +17,7 @@
 <body class="Dialog LoginBody">
     <div class="logo_div">
         <img src="Images/GBS_LOGO.png" alt="GBS" />
+	<h1>This is Test Instance</h1>
     </div>
     
     <div id="PageContent" class="PageContent DialogPageContent">
