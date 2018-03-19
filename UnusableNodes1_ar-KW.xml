@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="UserName" Caption="اسم المستخدم" />
+        <PropertyEditor Id="Password" Caption="Password" />
+      </Items>
+    </DetailView>
+    <ListView Id="AuthenticationStandardLogonParameters_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="UserName" Caption="User Name" />
+        <ColumnInfo Id="Password" Caption="Password" />
+      </Columns>
+    </ListView>
+    <ListView Id="AuthenticationStandardLogonParameters_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="UserName" Caption="User Name" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Password" Caption="رقم السر" />
+        <Member Name="UserName" Caption="اسم المستخدم" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

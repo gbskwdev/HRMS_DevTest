@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Employee">
+              <LayoutGroup Id="Employee_col1">
+                <LayoutItem Id="Code" tabindex="0" />
+                <LayoutItem Id="FirstNameEn" tabindex="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employee_col2">
+                <LayoutItem Id="Title" tabindex="1" />
+                <LayoutItem Id="FirstNameAr" tabindex="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="WorkflowRequest_WorkflowCCReceiver_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="CCReceiver" Width="115" SortIndex="0" SortOrder="Ascending" />
+      </Columns>
+    </ListView>
+    <DashboardView Id="PayrollSheet">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="PayrollSheet" ViewItem="BasicSalaryRegister" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeDeduction">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeDeduction" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeAttendance">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeAttendance" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="LeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item4">
+              <LayoutGroup Id="Item6">
+                <LayoutItem Id="WorkflowCCReceiver" ViewItem="WorkflowCCReceiver" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="AssetRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Item4">
+            <LayoutGroup Id="Item5">
+              <LayoutItem Id="WorkflowCCReceiver" ViewItem="WorkflowCCReceiver" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeaveAmendmentRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Item1">
+            <LayoutGroup Id="Item2">
+              <LayoutItem Id="WorkflowCCReceiver" ViewItem="WorkflowCCReceiver" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeaveCancellationRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Item2">
+            <LayoutGroup Id="Item3">
+              <LayoutItem Id="WorkflowCCReceiver" ViewItem="WorkflowCCReceiver" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="LeaveCancellationRequest">
+                <LayoutGroup Id="LeaveCancellationRequest_col2">
+                  <LayoutItem Id="TotalLeaveDays" ViewItem="TotalLeaveDays" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeavePlanner_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="Item3">
+                <LayoutItem Id="WorkflowCCReceiver" ViewItem="WorkflowCCReceiver" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ReturnFromLeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="Item5">
+                <LayoutItem Id="WorkflowCCReceiver" ViewItem="WorkflowCCReceiver" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SkipPunchRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Item1">
+            <LayoutGroup Id="Item2">
+              <LayoutItem Id="WorkflowCCReceiver" ViewItem="WorkflowCCReceiver" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="WorkflowRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="WorkflowCCReceiver" ViewItem="WorkflowCCReceiver" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

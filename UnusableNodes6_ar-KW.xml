@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="POBox" Caption="POBox" />
+      </Items>
+    </DetailView>
+    <ListView Id="Employee_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="POBox" Caption="POBox" />
+      </Columns>
+    </ListView>
+    <ListView Id="PersonalDataUpdateRequest_AllowedEmployeeList_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="POBox" Caption="POBox" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.Employee">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="POBox" Caption="صندوق بريد" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

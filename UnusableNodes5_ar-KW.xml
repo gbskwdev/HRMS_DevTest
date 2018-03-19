@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.AssetRequest" Caption="طلب الأصول">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Asset" Caption="الأصول" />
+        <Member Name="AssetCode" Caption="رمز الأصول" />
+        <Member Name="AssetType" Caption="نوع الأصول" />
+        <Member Name="CurrentDepartment" Caption="الإدارة الحالية" />
+        <Member Name="EndDate" Caption="تاريخ الانتهاء" />
+        <Member Name="JobTitle" Caption="الوظيفة" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="RequestComments" Caption="طلب تعليقات" />
+        <Member Name="StartDate" Caption="تاريخ البدء" />
+        <Member Name="WorkflowComments" Caption="تعليقات سير العمل" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.DocumentRequest" Caption="طلب المستند">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="CurrentDepartment" Caption="الإدارة الحالية" />
+        <Member Name="DeliveryDate" Caption="تاريخ توصيل" />
+        <Member Name="DocAttachment" Caption="مرفق المستند" />
+        <Member Name="DocumentNum" Caption="رقم المستند" />
+        <Member Name="DocumentPlace" Caption="مكان المستند" />
+        <Member Name="DocumentType" Caption="نوع المستند" />
+        <Member Name="JobTitle" Caption="الوظيفة" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="RequestComments" Caption="طلب تعليقات" />
+        <Member Name="ReturnDate" Caption="تاريخ العودة" />
+        <Member Name="Status" Caption="الحالة" />
+        <Member Name="WorkflowComments" Caption="تعليقات سير العمل" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.EmployeeActionRequest" Caption="طلب إجراء الموظف">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="CurrentSalary" Caption="الراتب الحالي" />
+        <Member Name="ActionReason" Caption="مبادرة السبب" />
+        <Member Name="CurrentEmployeeGroup" Caption="مجموعة الموظف الحالي" />
+        <Member Name="CurrentEmployeeSubGroup" Caption="الموظف - المجموعة الفرعية الحالي" />
+        <Member Name="CurrentJobTitle" Caption="المسمي الوظيفي الحالي" />
+        <Member Name="Employee" Caption="موظف" />
+        <Member Name="EndDate" Caption="تاريخ الانتهاء" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="NewEmployeeGroup" Caption="مجموعة الموظف جديد" />
+        <Member Name="NewEmployeeSubGroup" Caption="الموظف - المجموعة الفرعية جديد" />
+        <Member Name="NewJobTitle" Caption="المسمى الوظيفي الجديد" />
+        <Member Name="OrgAssignmentRequest" Caption="طلب تعيين الشركة" />
+        <Member Name="PersonalAction" Caption="تصرف الشخصي" />
+        <Member Name="RequestComments" Caption="طلب تعليقات" />
+        <Member Name="StartDate" Caption="تاريخ البدء" />
+        <Member Name="SysTenant" Caption="المستأجر النظام" />
+        <Member Name="WorkflowComments" Caption="تعليقات سير العمل" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.PhoneBillRequest" Caption="طلب فاتورة الهاتف">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="DeductionAmount" Caption="مبلغ مقتطع" />
+        <Member Name="InvoiceAmount" Caption="قيمة الفاتورة" />
+        <Member Name="Comments" Caption="تعليقات" />
+        <Member Name="DeductionDate" Caption="تاريخ اقتطاع" />
+        <Member Name="DeductionDays" Caption="أيام اقتطاع" />
+        <Member Name="Employee" Caption="موظف" />
+        <Member Name="InvoiceDate" Caption="تاريخ الفاتورة" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="SysTenant" Caption="المستأجر النظام" />
+        <Member Name="WageType" Caption="نوع أجرة" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.TimeOffRequest" Caption="طلب انتهى الوقت">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="CalendarDays" Caption="أيام التقويم" />
+        <Member Name="QuotaUsed" Caption="استخدام الحصة" />
+        <Member Name="UnpaidDays" Caption="أيام غير مدفوعة" />
+        <Member Name="EmployeeDepartment" Caption="إدارة الموظف" />
+        <Member Name="EndDate" Caption="تاريخ الانتهاء" />
+        <Member Name="EndTime" Caption="وقت النهاية" />
+        <Member Name="JobTitle" Caption="الوظيفة" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="RequestComments" Caption="طلب تعليقات" />
+        <Member Name="StartDate" Caption="تاريخ البدء" />
+        <Member Name="StartTime" Caption="وقت البدء" />
+        <Member Name="WorkflowComments" Caption="تعليقات سير العمل" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.TrainingRequest" Caption="طلب التدريب">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="TrainingCost" Caption="تكاليف التدريب" />
+        <Member Name="TrainingHours" Caption="ساعات التدريب" />
+        <Member Name="Comments" Caption="تعليقات" />
+        <Member Name="Employee" Caption="موظف" />
+        <Member Name="FromDate" Caption="من التاريخ" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="SysTenant" Caption="المستأجر النظام" />
+        <Member Name="ToDate" Caption="الى التاريخ" />
+        <Member Name="Trainer" Caption="مدرب" />
+        <Member Name="TrainingType" Caption="نوع التدريب" />
+        <Member Name="Venue" Caption="موقع التدريب" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.DelegationRequest">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Comments" Caption="تعليقات" />
+        <Member Name="EndDate" Caption="تاريخ الانتهاء" />
+        <Member Name="FromEmployee" Caption="من موظف" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="StartDate" Caption="تاريخ البدء" />
+        <Member Name="SysTenant" Caption="المستأجر النظام" />
+        <Member Name="ToEmployee" Caption="إلى الموظف" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.DisciplinaryRequest">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Comments" Caption="تعليقات" />
+        <Member Name="DeductionAmount" Caption="مبلغ مقتطع" />
+        <Member Name="DeductionDays" Caption="أيام اقتطاع" />
+        <Member Name="DisciplinaryDate" Caption="تاريخ التأديب" />
+        <Member Name="DisciplinaryType" Caption="نوع انضباطي" />
+        <Member Name="Employee" Caption="موظف" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="SysTenant" Caption="المستأجر النظام" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.PersonalDataUpdateRequest" Caption="طلب تحديث البيانات الشخصية">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="AllowedEmployeeList" Caption="قائمة بالموظفين المسموح" />
+        <Member Name="Email" Caption="البريد الإلكتروني" />
+        <Member Name="Employee" Caption="موظف" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="Mobile" Caption="رقم جوال" />
+        <Member Name="Photo" Caption="صورة" />
+        <Member Name="RequestComments" Caption="طلب تعليقات" />
+        <Member Name="SysTenant" Caption="المستأجر النظام" />
+        <Member Name="WorkflowComments" Caption="تعليقات سير العمل" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.RequestLog" Caption="طلب سجل">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="ActionDateTime" Caption="تاريخ ووقت العمل" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="SysTenant" Caption="المستأجر النظام" />
+        <Member Name="WorkflowRequest" Caption="طلب سير العمل" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.TravelDeskRequest" Caption="طلب مكتب السفر">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Applicant" Caption="طالب وظيفة" />
+        <Member Name="ArrivalDate" Caption="تاريخ وصول" />
+        <Member Name="ArrivalTime" Caption="وقت الوصول" />
+        <Member Name="Department" Caption="إدارة" />
+        <Member Name="DepartureDate" Caption="تاريخ رحلة" />
+        <Member Name="DepartureTime" Caption="وقت المغادرة" />
+        <Member Name="Destination" Caption="مكان المقصود" />
+        <Member Name="DiemType" Caption="نوع اليومية" />
+        <Member Name="EndDate" Caption="تاريخ الانتهاء" />
+        <Member Name="Hotel" Caption="فندق" />
+        <Member Name="HotelCost" Caption="تكلفة الفندق" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="NightStay" Caption="إقامة ليلة" />
+        <Member Name="RequestComments" Caption="طلب تعليقات" />
+        <Member Name="StartDate" Caption="تاريخ البدء" />
+        <Member Name="TotalCost" Caption="التكلفة الإجمالية" />
+        <Member Name="TotalNights" Caption="مجموع الليالي" />
+        <Member Name="TravelType" Caption="نوع رحلة " />
+        <Member Name="WorkflowComments" Caption="تعليقات سير العمل" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization Id="Localization">
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="HCM10.Module.BusinessObjects.Workflow.General.RequestActionType">
+        <LocalizationItem Name="Approved" Value="موافق عليه" />
+        <LocalizationItem Name="closed" Value="مغلق" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+</Application>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="EmployeePayment_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Comments" Caption="Comments" />
+        <ColumnInfo Id="Employee" Caption="Employee" />
+        <ColumnInfo Id="WageType" Caption="Wage Type" />
+        <ColumnInfo Id="Amount" Caption="Amount" />
+        <ColumnInfo Id="Currency" Caption="Currency" />
+        <ColumnInfo Id="PaymentDate" Caption="Payment Date" />
+        <ColumnInfo Id="Locked" Caption="Locked" />
+        <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

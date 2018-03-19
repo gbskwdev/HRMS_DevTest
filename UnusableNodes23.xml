@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Employee">
+              <LayoutGroup Id="Employee_col1">
+                <LayoutItem Id="Code" tabindex="0" />
+                <LayoutItem Id="FirstNameEn" tabindex="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employee_col2">
+                <LayoutItem Id="Title" tabindex="1" />
+                <LayoutItem Id="FirstNameAr" tabindex="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DashboardView Id="EmployeeDeduction">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeDeduction" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeAttendance">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeAttendance" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="AssetRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" RelativeSize="13.861386138613861" Index="1" Caption="Request Log" ShowCaption="False" Direction="Horizontal" Removed="True">
+            <LayoutItem Id="RequestLog" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DocumentRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" RelativeSize="42.665036674816626" Index="1" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeaveCancellationRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" RelativeSize="33.044554455445542" Index="1" Caption="Request Log" ShowCaption="False" Direction="Horizontal" Removed="True">
+            <LayoutItem Id="RequestLog" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="LeaveCancellationRequest">
+                <LayoutGroup Id="LeaveCancellationRequest_col2">
+                  <LayoutItem Id="TotalLeaveDays" ViewItem="TotalLeaveDays" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" RelativeSize="0.1016260162601626" Index="2" Caption="Request Log" ShowCaption="False" Direction="Horizontal">
+            <LayoutItem Id="RequestLog" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ReturnFromLeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" RelativeSize="8.53960396039604" Caption="Request Log" ShowCaption="False" Index="2" Direction="Horizontal" Removed="True">
+            <LayoutItem Id="RequestLog" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SkipPunchRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" Caption="Request Log" ShowCaption="False" Direction="Horizontal" RelativeSize="42.32673267326733" Removed="True">
+            <LayoutItem Id="RequestLog" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="WorkflowCCReceiver_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowCCReceiver">
+              <LayoutItem Id="RequestComments" ViewItem="RequestComments" CaptionLocation="Left" Index="1" RelativeSize="96.039603960396036" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

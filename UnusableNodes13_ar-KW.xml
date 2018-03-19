@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="DisciplinaryRequest_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="DeductionAmount" Caption="Deduction Amount" />
+        <PropertyEditor Id="DeductionDays" Caption="Deduction Days" />
+      </Items>
+    </DetailView>
+    <ListView Id="DisciplinaryRequest_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="DeductionDays" Caption="Deduction Days" />
+        <ColumnInfo Id="DeductionAmount" Caption="Deduction Amount" />
+      </Columns>
+    </ListView>
+    <ListView Id="DisciplinaryRequest_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="DeductionDays" Caption="Deduction Days" />
+        <ColumnInfo Id="DeductionAmount" Caption="Deduction Amount" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

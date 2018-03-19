@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Employee">
+              <LayoutGroup Id="Employee_col1">
+                <LayoutItem Id="Code" tabindex="0" />
+                <LayoutItem Id="FirstNameEn" tabindex="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employee_col2">
+                <LayoutItem Id="Title" tabindex="1" />
+                <LayoutItem Id="FirstNameAr" tabindex="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DashboardView Id="PayrollSheet">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="PayrollSheet" ViewItem="BasicSalaryRegister" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeDeduction">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeDeduction" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeAttendance">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeAttendance" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="AttendanceLog">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="AttendanceLog" ViewItem="uscTimeSchedule.ascx" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="LeaveCancellationRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="LeaveCancellationRequest">
+                <LayoutGroup Id="LeaveCancellationRequest_col2">
+                  <LayoutItem Id="TotalLeaveDays" ViewItem="TotalLeaveDays" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.AssetRequest" DefaultLookupEditorMode="AllItems" />
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.DocumentRequest">
+      <AppearanceRules Id="AppearanceRules">
+        <AppearanceRule Id="docplacedisable" TargetItems="DocumentPlace" Context="DetailView" Enabled="False" Priority="2" Criteria="[WorkflowStep] != [requeststeps] And [IsshownEmploee] = '1'" />
+        <AppearanceRule Id="docplaceenable" Context="DetailView" Criteria="[WorkflowStep] = [requeststeps] And [IsshownEmploee] = '0'" Priority="1" Enabled="True" TargetItems="DocumentPlace" />
+      </AppearanceRules>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.EmployeeActionRequest">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="CurrentSalary" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.PhoneBillRequest">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="AllowanceAmount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+        <Member Name="DeductionAmount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+        <Member Name="InvoiceAmount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.TimeOffRequest">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="CalendarDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+        <Member Name="QuotaUsed" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+        <Member Name="UnpaidDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.General.TrainingRequest">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="TrainingCost" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+        <Member Name="TrainingHours" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

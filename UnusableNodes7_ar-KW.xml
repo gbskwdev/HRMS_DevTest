@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="POBox" Caption="POBox" />
+      </Items>
+    </DetailView>
+    <ListView Id="Employee_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="POBox" Caption="POBox" />
+      </Columns>
+    </ListView>
+    <DetailView Id="EmployeeTimesheet_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="FromTime" Caption="From Time" />
+        <PropertyEditor Id="ToTime" Caption="To Time" />
+      </Items>
+    </DetailView>
+    <ListView Id="EmployeeTimesheet_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="FromTime" Caption="From Time" />
+        <ColumnInfo Id="ToTime" Caption="To Time" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeTimesheet_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="FromTime" Caption="From Time" />
+        <ColumnInfo Id="ToTime" Caption="To Time" />
+      </Columns>
+    </ListView>
+    <ListView Id="PersonalDataUpdateRequest_AllowedEmployeeList_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="POBox" Caption="POBox" />
+      </Columns>
+    </ListView>
+    <DetailView Id="TimeRegister_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="AdvanceLeavePaid" Caption="Advance Leave Paid" />
+        <PropertyEditor Id="AdvLeaveRecoveryDay" Caption="Adv Leave Recovery Day" />
+        <PropertyEditor Id="ExtraWorkingDay" Caption="Extra Working Day" />
+        <PropertyEditor Id="LieuDay" Caption="Lieu Day" />
+      </Items>
+    </DetailView>
+    <ListView Id="TimeRegister_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="AdvanceLeavePaid" Caption="Advance Leave Paid" />
+        <ColumnInfo Id="ExtraWorkingDay" Caption="Extra Working Day" />
+        <ColumnInfo Id="LieuDay" Caption="Lieu Day" />
+        <ColumnInfo Id="AdvLeaveRecoveryDay" Caption="Adv Leave Recovery Day" />
+      </Columns>
+    </ListView>
+    <ListView Id="TimeRegister_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="AdvanceLeavePaid" Caption="Advance Leave Paid" />
+        <ColumnInfo Id="ExtraWorkingDay" Caption="Extra Working Day" />
+        <ColumnInfo Id="LieuDay" Caption="Lieu Day" />
+        <ColumnInfo Id="AdvLeaveRecoveryDay" Caption="Adv Leave Recovery Day" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.Employee">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="POBox" Caption="صندوق بريد" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.EmployeeTimesheet">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="FromTime" Caption="من وقت" />
+        <Member Name="ToTime" Caption="الى وقت" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TimeRegister">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="AdvanceLeavePaid" Caption="دفع إجازة مسبقة" />
+        <Member Name="AdvLeaveRecoveryDay" Caption="يوم استعادة الإجازة المسبقة" />
+        <Member Name="ExtraWorkingDay" Caption="يوم عمل إضافي" />
+        <Member Name="LieuDay" Caption="يوم عمل بديل" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Employee">
+              <LayoutGroup Id="Employee_col1">
+                <LayoutItem Id="Code" tabindex="0" />
+                <LayoutItem Id="FirstNameEn" tabindex="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employee_col2">
+                <LayoutItem Id="Title" tabindex="1" />
+                <LayoutItem Id="FirstNameAr" tabindex="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="WorkflowCCReceiver_DetailView" CollectionsEditMode="Edit" ImageName="BO_Unknown">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="WorkflowCCReceiver" Direction="Horizontal" RelativeSize="100" Caption="WorkflowCCReceiver">
+              <LayoutGroup Id="Auto7b9e3602-afcb-48a9-8614-083be626a890" ShowCaption="False" Caption="" Index="0" RelativeSize="50">
+                <LayoutItem Id="WorkflowStep" ViewItem="WorkflowStep" Index="0" RelativeSize="3.9603960396039604" />
+                <LayoutItem Id="RequestComments" ViewItem="RequestComments" CaptionLocation="Left" Index="1" RelativeSize="96.039603960396036" />
+              </LayoutGroup>
+              <LayoutItem Id="CCReceiver" ViewItem="CCReceiver" Index="1" RelativeSize="50" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DashboardView Id="PayrollSheet">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="PayrollSheet" ViewItem="BasicSalaryRegister" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeDeduction">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeDeduction" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeAttendance">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeAttendance" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="LeaveCancellationRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="LeaveCancellationRequest">
+                <LayoutGroup Id="LeaveCancellationRequest_col2">
+                  <LayoutItem Id="TotalLeaveDays" ViewItem="TotalLeaveDays" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.WorkflowCCReceiver" DefaultDetailViewImage="BO_Unknown" />
+  </BOModel>
+</Application>

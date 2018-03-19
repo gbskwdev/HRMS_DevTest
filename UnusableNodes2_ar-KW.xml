@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="AssetRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" Caption="طلب سجل" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DocumentRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" Caption="طلب سجل" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Employee_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="PlaceOfBirth" Caption="Place Of Birth" />
+      </Columns>
+    </ListView>
+    <DetailView Id="LeaveCancellationRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" Caption="طلب سجل" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" Caption="طلب سجل" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PersonalDataUpdateRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" Caption="طلب سجل" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ReturnFromLeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" Caption="طلب سجل" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SkipPunchRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RequestLog_Group" Caption="طلب سجل" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="TimeEvent_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="RecordSoruce" Caption="Record Soruce" />
+      </Items>
+    </DetailView>
+    <ListView Id="TimeEvent_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="RecordSoruce" Caption="Record Soruce" />
+      </Columns>
+    </ListView>
+    <ListView Id="TimeEvent_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="RecordSoruce" Caption="Record Soruce" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TimeEvent">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="RecordSoruce" Caption="سجل المصدر" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

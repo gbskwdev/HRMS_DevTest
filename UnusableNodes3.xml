@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Employee">
+              <LayoutGroup Id="Employee_col1">
+                <LayoutItem Id="Code" tabindex="0" />
+                <LayoutItem Id="FirstNameEn" tabindex="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employee_col2">
+                <LayoutItem Id="Title" tabindex="1" />
+                <LayoutItem Id="FirstNameAr" tabindex="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView">
+      <Items Id="Items">
+        <ActionContainerViewItem Id="SwitchLanguage" ActionContainer="SwitchLanguage" Caption="SwitchLanguage(9)" />
+        <PropertyEditor Id="UserName" Caption="User Name" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="86.782376502002677">
+            <LayoutGroup Id="AuthenticationStandardLogonParameters" RelativeSize="100" Removed="True">
+              <LayoutItem Id="SwitchLanguage" ViewItem="SwitchLanguage" Index="1" RelativeSize="29.292929292929294" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="RootGroup" ShowCaption="False" Index="1" RelativeSize="13.21762349799733">
+            <LayoutGroup Id="EditorsGroup" ShowCaption="False" Index="0" RelativeSize="100">
+              <LayoutGroup Id="Editors" ShowCaption="False" Index="0" RelativeSize="100">
+                <LayoutItem Id="UserName" Index="0" RelativeSize="34.343434343434346" />
+                <LayoutItem Id="Password" Index="2" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DashboardView Id="EmployeeDeduction">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeDeduction" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeAttendance">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeAttendance" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="LeaveCancellationRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="LeaveCancellationRequest">
+                <LayoutGroup Id="LeaveCancellationRequest_col2">
+                  <LayoutItem Id="TotalLeaveDays" ViewItem="TotalLeaveDays" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

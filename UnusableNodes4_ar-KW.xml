@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="EmployeeLoan_EmpLoanPayment_ListView" Caption="Employee Loan Payment">
+      <Columns Id="Columns">
+        <ColumnInfo Id="EmployeeLoan" Caption="Employee Loan" />
+        <ColumnInfo Id="Locked" Caption="Locked" />
+        <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
+        <ColumnInfo Id="PaymentDate" Caption="Payment Date" />
+        <ColumnInfo Id="Amount" Caption="Amount" />
+        <ColumnInfo Id="LoanPaymentType" Caption="Loan Payment Type" />
+      </Columns>
+    </ListView>
+    <ListView Id="Employee_Overtime_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="WageType" Caption="Wage Type" />
+        <ColumnInfo Id="StartDate" Caption="Start Date" />
+        <ColumnInfo Id="EndDate" Caption="End Date" />
+        <ColumnInfo Id="StartTime" Caption="Start Time" />
+        <ColumnInfo Id="EndTime" Caption="End Time" />
+      </Columns>
+    </ListView>
+    <DetailView Id="EmployeeLoan_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="EmpLoanPayment" Caption="Emp Loan Payment" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="EmpLoanPayment_Group" Caption="دفع قرض الموظفين" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="EmployeeLoanPayment_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="EmployeeLoan" Caption="Employee Loan" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeLoanPayment_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="EmployeeLoan" Caption="Employee Loan" />
+      </Columns>
+    </ListView>
+    <DetailView Id="EmployeeOvertime_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="EndDate" Caption="End Date" />
+        <PropertyEditor Id="EndTime" Caption="End Time" />
+        <PropertyEditor Id="StartDate" Caption="Start Date" />
+        <PropertyEditor Id="StartTime" Caption="Start Time" />
+        <PropertyEditor Id="WageType" Caption="Wage Type" />
+      </Items>
+    </DetailView>
+    <ListView Id="EmployeeOvertime_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="WageType" Caption="Wage Type" />
+        <ColumnInfo Id="StartDate" Caption="Start Date" />
+        <ColumnInfo Id="EndDate" Caption="End Date" />
+        <ColumnInfo Id="StartTime" Caption="Start Time" />
+        <ColumnInfo Id="EndTime" Caption="End Time" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeOvertime_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="WageType" Caption="Wage Type" />
+        <ColumnInfo Id="StartDate" Caption="Start Date" />
+        <ColumnInfo Id="EndDate" Caption="End Date" />
+        <ColumnInfo Id="StartTime" Caption="Start Time" />
+        <ColumnInfo Id="EndTime" Caption="End Time" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoan">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="EmpLoanPayment" Caption="دفع قرض الموظفين" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoanPayment">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="EmployeeLoan" Caption="قرض الموظفين" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeOvertime">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="EndDate" Caption="تاريخ الانتهاء" />
+        <Member Name="EndTime" Caption="وقت النهاية" />
+        <Member Name="StartDate" Caption="تاريخ البدء" />
+        <Member Name="StartTime" Caption="وقت البدء" />
+        <Member Name="WageType" Caption="نوع أجرة" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

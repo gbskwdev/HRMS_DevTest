@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="TimeRegister_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="HolidayOTMins" Caption="Holiday OTMins" />
+        <PropertyEditor Id="NormalDayOTMins" Caption="Normal Day OTMins" />
+        <PropertyEditor Id="RestDayOTMins" Caption="Rest Day OTMins" />
+        <PropertyEditor Id="WeekendOTMins" Caption="Weekend OTMins" />
+      </Items>
+    </DetailView>
+    <ListView Id="TimeRegister_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="NormalDayOTMins" Caption="Normal Day OTMins" />
+        <ColumnInfo Id="RestDayOTMins" Caption="Rest Day OTMins" />
+        <ColumnInfo Id="HolidayOTMins" Caption="Holiday OTMins" />
+        <ColumnInfo Id="WeekendOTMins" Caption="Weekend OTMins" />
+      </Columns>
+    </ListView>
+    <ListView Id="TimeRegister_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="NormalDayOTMins" Caption="Normal Day OTMins" />
+        <ColumnInfo Id="RestDayOTMins" Caption="Rest Day OTMins" />
+        <ColumnInfo Id="HolidayOTMins" Caption="Holiday OTMins" />
+        <ColumnInfo Id="WeekendOTMins" Caption="Weekend OTMins" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TimeRegister">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="HolidayOTMins" Caption="دقائق العمل الإضافي للعطلات" />
+        <Member Name="NormalDayOTMins" Caption="أيام العادية العمل الإضافي دقائق" />
+        <Member Name="RestDayOTMins" Caption="دقائق الراحة الإضافية في أيام العمل" />
+        <Member Name="WeekendOTMins" Caption="دقائق العمل الإضافي العطلة نهاية الاسبوع" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

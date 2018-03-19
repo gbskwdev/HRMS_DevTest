@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Employee">
+              <LayoutGroup Id="Employee_col1">
+                <LayoutItem Id="Code" tabindex="0" />
+                <LayoutItem Id="FirstNameEn" tabindex="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employee_col2">
+                <LayoutItem Id="Title" tabindex="1" />
+                <LayoutItem Id="FirstNameAr" tabindex="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DashboardView Id="EmployeeDeduction">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeDeduction" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeAttendance">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeAttendance" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="AbsenceType_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="AbsenceType">
+              <LayoutGroup Id="AbsenceType_col2">
+                <LayoutGroup Id="Autoadeb6d9b-c1a3-4f1a-96d6-3f1199381606">
+                  <LayoutGroup Id="Autoa2251c2a-d2f3-4b91-8a37-d8769e2ff720">
+                    <LayoutItem Id="MinLimitInDays" ViewItem="MinLimitInDays" />
+                    <LayoutItem Id="MaxLimitInDays" ViewItem="MaxLimitInDays" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto85cc05ff-7fef-4e15-bca2-271858ed1909">
+                    <LayoutItem Id="PolicyRestrictType" ViewItem="PolicyRestrictType" />
+                    <LayoutItem Id="ApplyMinLeave" ViewItem="ApplyMinLeave" />
+                    <LayoutItem Id="ApplyMaxLeave" ViewItem="ApplyMaxLeave" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Auto875829d6-5cd2-4fe6-829f-7b0a31021b9c">
+                  <LayoutItem Id="ApplyLeaveInAdvanceDays" ViewItem="ApplyLeaveInAdvanceDays" />
+                  <LayoutItem Id="ApplyLeaveInAdvnace" ViewItem="ApplyLeaveInAdvnace" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeaveCancellationRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="LeaveCancellationRequest">
+                <LayoutGroup Id="LeaveCancellationRequest_col2">
+                  <LayoutItem Id="TotalLeaveDays" ViewItem="TotalLeaveDays" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeavePlanner_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="WorkFlowApprover">
+            <LayoutItem Id="WorkFlowApprover1" ViewItem="WorkFlowApprover" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkFlowApprover">
+              <LayoutItem Id="WorkFlowApprover" ViewItem="WorkFlowApprover" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="WorkflowRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="WorkFlowApprover">
+            <LayoutItem Id="WorkFlowApprover" ViewItem="WorkFlowApprover" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
