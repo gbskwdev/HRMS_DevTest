@@ -1,52 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
   <Views Id="Views">
-    <DetailView Id="Employee_DetailView">
-      <Layout Id="Layout">
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="Employee">
-              <LayoutGroup Id="Employee_col1">
-                <LayoutItem Id="Code" tabindex="0" />
-                <LayoutItem Id="FirstNameEn" tabindex="2" />
-              </LayoutGroup>
-              <LayoutGroup Id="Employee_col2">
-                <LayoutItem Id="Title" tabindex="1" />
-                <LayoutItem Id="FirstNameAr" tabindex="3" />
-              </LayoutGroup>
-            </LayoutGroup>
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
+    <DetailView Id="DisciplinaryRequest_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="DisciplinaryType" Caption="Disciplinary Type" />
+      </Items>
     </DetailView>
-    <DashboardView Id="EmployeeDeduction">
-      <Layout Id="Layout">
-        <LayoutGroup Id="Main">
-          <LayoutItem Id="EmployeeDeduction" ViewItem="MonthlyTimeAttendance" />
-        </LayoutGroup>
-      </Layout>
-    </DashboardView>
-    <DashboardView Id="EmployeeAttendance">
-      <Layout Id="Layout">
-        <LayoutGroup Id="Main">
-          <LayoutItem Id="EmployeeAttendance" ViewItem="MonthlyTimeAttendance" />
-        </LayoutGroup>
-      </Layout>
-    </DashboardView>
-    <DetailView Id="LeaveCancellationRequest_DetailView">
-      <Layout Id="Layout">
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <TabbedGroup Id="Item1">
-              <LayoutGroup Id="LeaveCancellationRequest">
-                <LayoutGroup Id="LeaveCancellationRequest_col2">
-                  <LayoutItem Id="TotalLeaveDays" ViewItem="TotalLeaveDays" />
-                </LayoutGroup>
-              </LayoutGroup>
-            </TabbedGroup>
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
+    <ListView Id="DisciplinaryRequest_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="DisciplinaryType" Caption="Disciplinary Type" />
+      </Columns>
+    </ListView>
+    <ListView Id="DisciplinaryRequest_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="DisciplinaryType" Caption="Disciplinary Type" />
+      </Columns>
+    </ListView>
   </Views>
 </Application>

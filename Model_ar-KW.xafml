@@ -1650,26 +1650,13 @@
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoan" Caption="قرض الموظفين">
       <OwnMembers>
-        <Member Name="Amount" Caption="قيمة" />
         <Member Name="Comments" Caption="تعليقات" />
         <Member Name="DueAmount" Caption="المبلغ المستحق" />
-        <Member Name="DueAmountAsOn" Caption="المبلغ المستحق من" />
         <Member Name="Employee" Caption="موظف" />
         <Member Name="EndDate" Caption="تاريخ الانتهاء" />
-        <Member Name="InstallmentAmount" Caption="تقسيط المبلغ" />
-        <Member Name="InstallmentStartDate" Caption="تاريخ بدء التقسيط" />
         <Member Name="LoanType" Caption="نوع القرض" />
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="StartDate" Caption="تاريخ البدء" />
-        <Member Name="SysTenant" Caption="المستأجر النظام" />
-      </OwnMembers>
-    </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoanPayment" Caption="دفع قرض الموظفين">
-      <OwnMembers>
-        <Member Name="Amount" Caption="قيمة" />
-        <Member Name="LoanPaymentType" Caption="نوع دفع القرض" />
-        <Member Name="Locked" Caption="مقفل" />
-        <Member Name="PaymentDate" Caption="تاريخ الدفع" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
@@ -3141,7 +3128,6 @@
         <LocalizationItem Name="Active" Value="نشيط" />
       </LocalizationGroup>
       <LocalizationGroup Name="HCM10.Module.BusinessObjects.PersonnelAdministration.LeavePaymentType" Value="إجازة نوع الدفع" />
-      <LocalizationGroup Name="HCM10.Module.BusinessObjects.PersonnelAdministration.LoanPaymentType" Value="نوع دفع القرض" />
       <LocalizationGroup Name="HCM10.Module.BusinessObjects.PersonnelAdministration.PaymentType" Value="نوع الدفع">
         <LocalizationItem Name="BANK" Value="بنك" />
       </LocalizationGroup>
@@ -5974,10 +5960,6 @@
         <ColumnInfo Id="LoanType" Caption="Loan Type" />
         <ColumnInfo Id="StartDate" Caption="Start Date" />
         <ColumnInfo Id="EndDate" Caption="End Date" />
-        <ColumnInfo Id="Amount" Caption="Amount" />
-        <ColumnInfo Id="InstallmentAmount" Caption="Installment Amount" />
-        <ColumnInfo Id="InstallmentStartDate" Caption="Installment Start Date" />
-        <ColumnInfo Id="DueAmountAsOn" Caption="Due Amount As On" />
         <ColumnInfo Id="DueAmount" Caption="Due Amount" />
         <ColumnInfo Id="Comments" Caption="Comments" />
       </Columns>
@@ -7585,14 +7567,10 @@
     </ListView>
     <DetailView Id="EmployeeLoan_DetailView" Caption="Employee Loan">
       <Items>
-        <PropertyEditor Id="Amount" Caption="Amount" />
         <PropertyEditor Id="Comments" Caption="Comments" />
         <PropertyEditor Id="DueAmount" Caption="Due Amount" />
-        <PropertyEditor Id="DueAmountAsOn" Caption="Due Amount As On" />
         <PropertyEditor Id="Employee" Caption="Employee" />
         <PropertyEditor Id="EndDate" Caption="End Date" />
-        <PropertyEditor Id="InstallmentAmount" Caption="Installment Amount" />
-        <PropertyEditor Id="InstallmentStartDate" Caption="Installment Start Date" />
         <PropertyEditor Id="LoanType" Caption="Loan Type" />
         <PropertyEditor Id="Locked" Caption="Locked" />
         <PropertyEditor Id="StartDate" Caption="Start Date" />
@@ -7616,10 +7594,6 @@
         <ColumnInfo Id="LoanType" Caption="Loan Type" />
         <ColumnInfo Id="StartDate" Caption="Start Date" />
         <ColumnInfo Id="EndDate" Caption="End Date" />
-        <ColumnInfo Id="Amount" Caption="Amount" />
-        <ColumnInfo Id="InstallmentAmount" Caption="Installment Amount" />
-        <ColumnInfo Id="InstallmentStartDate" Caption="Installment Start Date" />
-        <ColumnInfo Id="DueAmountAsOn" Caption="Due Amount As On" />
         <ColumnInfo Id="DueAmount" Caption="Due Amount" />
       </Columns>
     </ListView>
@@ -7630,38 +7604,7 @@
         <ColumnInfo Id="LoanType" Caption="Loan Type" />
         <ColumnInfo Id="StartDate" Caption="Start Date" />
         <ColumnInfo Id="EndDate" Caption="End Date" />
-        <ColumnInfo Id="Amount" Caption="Amount" />
-        <ColumnInfo Id="InstallmentAmount" Caption="Installment Amount" />
-        <ColumnInfo Id="InstallmentStartDate" Caption="Installment Start Date" />
-        <ColumnInfo Id="DueAmountAsOn" Caption="Due Amount As On" />
         <ColumnInfo Id="DueAmount" Caption="Due Amount" />
-        <ColumnInfo Id="Locked" Caption="Locked" />
-        <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
-      </Columns>
-    </ListView>
-    <DetailView Id="EmployeeLoanPayment_DetailView" Caption="Employee Loan Payment">
-      <Items>
-        <PropertyEditor Id="Amount" Caption="Amount" />
-        <PropertyEditor Id="LoanPaymentType" Caption="Loan Payment Type" />
-        <PropertyEditor Id="Locked" Caption="Locked" />
-        <PropertyEditor Id="PaymentDate" Caption="Payment Date" />
-        <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
-      </Items>
-    </DetailView>
-    <ListView Id="EmployeeLoanPayment_ListView" Caption="Employee Loan Payment">
-      <Columns>
-        <ColumnInfo Id="Locked" Caption="Locked" />
-        <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
-        <ColumnInfo Id="PaymentDate" Caption="Payment Date" />
-        <ColumnInfo Id="Amount" Caption="Amount" />
-        <ColumnInfo Id="LoanPaymentType" Caption="Loan Payment Type" />
-      </Columns>
-    </ListView>
-    <ListView Id="EmployeeLoanPayment_LookupListView" Caption="Employee Loan Payment">
-      <Columns>
-        <ColumnInfo Id="PaymentDate" Caption="Payment Date" />
-        <ColumnInfo Id="Amount" Caption="Amount" />
-        <ColumnInfo Id="LoanPaymentType" Caption="Loan Payment Type" />
         <ColumnInfo Id="Locked" Caption="Locked" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>

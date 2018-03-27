@@ -59,6 +59,15 @@
 
     </tr>
     <tr>
+        <td>
+            <dx:ASPxLabel ID="lblReasonType" runat="server" Text="Off Reason Type"></dx:ASPxLabel>
+        </td>
+        <td colspan="2">
+            <dx:ASPxComboBox ID="cmbReasonType" runat="server" CssClass="roundedBorders" Height="35px"></dx:ASPxComboBox>
+        </td>
+
+    </tr>
+    <tr>
         <td colspan="3">
             <dx:ASPxCallbackPanel ID="ASPxCallbackPanelPeriod" runat="server"
                 ClientInstanceName="CallbackPanelPeriod"

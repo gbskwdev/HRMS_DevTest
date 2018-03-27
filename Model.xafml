@@ -233,8 +233,6 @@
       <OwnMembers>
         <Member Name="AbsenceHours" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
         <Member Name="CalendarDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
-        <Member Name="EndTime" />
-        <Member Name="StartDate" />
         <Member Name="StartTime" EditMaskType="DateTime" />
         <Member Name="TotalLeaveDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
       </OwnMembers>
@@ -309,14 +307,7 @@
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoan">
       <OwnMembers>
-        <Member Name="Amount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
         <Member Name="DueAmount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
-        <Member Name="InstallmentAmount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
-      </OwnMembers>
-    </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoanPayment">
-      <OwnMembers>
-        <Member Name="Amount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
       </OwnMembers>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeManager">
@@ -845,6 +836,7 @@
               <Item Id="DependantType_ListView" Index="9" />
               <Item Id="DisciplinaryType_ListView" Index="10" />
               <Item Id="DisciplinaryDeductionType_ListView" Caption="Disciplinary Deduction Type" Index="11" ImageName="disciplinary" ViewId="DisciplinaryDeductionType_ListView" IsNewNode="True" />
+              <Item Id="NumberSeries" Caption="Number Series" ViewId="NumberSeries_ListView" ImageName="transtype" IsNewNode="True" />
             </Items>
           </Item>
           <Item Id="System Security">
@@ -1798,6 +1790,40 @@
         <CustomUserControlViewItemWeb Id="EmployeeIncentive" CustomControlPath="~/UserControls/Reports/Analysis/Employees/uscRptEmployeeIncentive.ascx" Caption="Employee Incentive" IsNewNode="True" />
       </Items>
     </DashboardView>
+    <DetailView Id="EmployeeLoan_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="19.925742574257427">
+            <LayoutGroup Id="EmployeeLoan" RelativeSize="100">
+              <LayoutGroup Id="EmployeeLoan_col1" RelativeSize="50">
+                <LayoutItem Id="Employee" RelativeSize="25.806451612903224" />
+                <LayoutItem Id="StartDate" Index="1" RelativeSize="19.35483870967742" />
+                <LayoutItem Id="EndDate" Index="2" RelativeSize="19.35483870967742" />
+                <LayoutItem Id="LoanType" ViewItem="LoanType" Index="3" RelativeSize="35.483870967741936" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="ActualAmount" RelativeSize="23.529411764705884" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="EmployeeLoan_col2" RelativeSize="50" Caption="EmployeeLoan_col2">
+                <LayoutGroup Id="Autof0fbeaac-1b53-4544-ba04-d229537b8055" ShowCaption="False" Caption="Autof0fbeaac-1b53-4544-ba04-d229537b8055(11)" Direction="Vertical" Index="0" RelativeSize="50" IsNewNode="True">
+                  <LayoutItem Id="ActualAmount" ViewItem="ActualAmount" Index="0" RelativeSize="51.612903225806448" IsNewNode="True" />
+                  <LayoutItem Id="DueAmount" ViewItem="DueAmount" Index="1" RelativeSize="48.387096774193552" SizeConstraintsType="Default" MinSize="173, 38" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autoa6cc0cdb-cdb7-4c80-962b-3c987979a54e" ShowCaption="False" Caption="Autoa6cc0cdb-cdb7-4c80-962b-3c987979a54e(15)" Index="2" RelativeSize="30.64516129032258" IsNewNode="True">
+                  <LayoutGroup Id="Autoab992e17-efcd-46cd-826e-b897b36755e5" ShowCaption="False" Caption="Autoab992e17-efcd-46cd-826e-b897b36755e5(17)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="FixedAmount" ViewItem="FixedAmount" Index="0" RelativeSize="49.8502994011976" IsNewNode="True" />
+                    <LayoutItem Id="RecoveryStartDate" ViewItem="RecoveryStartDate" Index="1" RelativeSize="50.1497005988024" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="FixedAmount" Index="3" RelativeSize="27.941176470588236" Removed="True" />
+                <LayoutItem Id="DueAmount" RelativeSize="17.647058823529413" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="7.7970297029702973">
+            <LayoutItem Id="Comments" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="EmployeeOrgAssignment_LookupListView">
       <Columns>
         <ColumnInfo Id="Employee" LookupProperty="FullNameEn" />
@@ -2329,6 +2355,13 @@
       </Items>
     </DashboardView>
     <DetailView Id="LoanType_DetailView" DefaultFocusedItem="NameEn" />
+    <ListView Id="LoanType_ListView">
+      <Columns>
+        <ColumnInfo Id="NameEn" Width="182" />
+        <ColumnInfo Id="Code" Width="101" />
+        <ColumnInfo Id="NameAr" Width="81" />
+      </Columns>
+    </ListView>
     <DetailView Id="LogonAttemptsAmountedToLimit_DetailView">
       <Items>
         <StaticText Id="LogonText" Text="After three unsuccessful login attempts, the browser should be closed. Please consider contacting an administrator about your login details." />

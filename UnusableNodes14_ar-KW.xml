@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="EmployeeLoan_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Amount" Caption="Amount" />
+        <ColumnInfo Id="InstallmentAmount" Caption="Installment Amount" />
+      </Columns>
+    </ListView>
+    <DetailView Id="EmployeeLoan_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="Amount" Caption="Amount" />
+        <PropertyEditor Id="InstallmentAmount" Caption="Installment Amount" />
+      </Items>
+    </DetailView>
+    <ListView Id="Employee_Loan_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Amount" Caption="Amount" />
+        <ColumnInfo Id="InstallmentAmount" Caption="Installment Amount" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeLoan_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Amount" Caption="Amount" />
+        <ColumnInfo Id="InstallmentAmount" Caption="Installment Amount" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoan">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Amount" Caption="قيمة" />
+        <Member Name="InstallmentAmount" Caption="تقسيط المبلغ" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="EmployeeLoanPayment_DetailView" Caption="Employee Loan Payment">
+      <Items Id="Items">
+        <PropertyEditor Id="Amount" Caption="Amount" />
+        <PropertyEditor Id="LoanPaymentType" Caption="Loan Payment Type" />
+        <PropertyEditor Id="Locked" Caption="Locked" />
+        <PropertyEditor Id="PaymentDate" Caption="Payment Date" />
+        <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
+      </Items>
+    </DetailView>
+    <ListView Id="EmployeeLoanPayment_ListView" Caption="Employee Loan Payment">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Locked" Caption="Locked" />
+        <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
+        <ColumnInfo Id="PaymentDate" Caption="Payment Date" />
+        <ColumnInfo Id="Amount" Caption="Amount" />
+        <ColumnInfo Id="LoanPaymentType" Caption="Loan Payment Type" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeLoanPayment_LookupListView" Caption="Employee Loan Payment">
+      <Columns Id="Columns">
+        <ColumnInfo Id="PaymentDate" Caption="Payment Date" />
+        <ColumnInfo Id="Amount" Caption="Amount" />
+        <ColumnInfo Id="LoanPaymentType" Caption="Loan Payment Type" />
+        <ColumnInfo Id="Locked" Caption="Locked" />
+        <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
+      </Columns>
+    </ListView>
+    <DetailView Id="EmployeeLoan_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="DueAmountAsOn" Caption="Due Amount As On" />
+        <PropertyEditor Id="InstallmentStartDate" Caption="Installment Start Date" />
+      </Items>
+    </DetailView>
+    <ListView Id="Employee_Loan_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="InstallmentStartDate" Caption="Installment Start Date" />
+        <ColumnInfo Id="DueAmountAsOn" Caption="Due Amount As On" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeLoan_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="DueAmountAsOn" Caption="Due Amount As On" />
+        <ColumnInfo Id="InstallmentStartDate" Caption="Installment Start Date" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeLoan_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="DueAmountAsOn" Caption="Due Amount As On" />
+        <ColumnInfo Id="InstallmentStartDate" Caption="Installment Start Date" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoanPayment" Caption="دفع قرض الموظفين">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Amount" Caption="قيمة" />
+        <Member Name="LoanPaymentType" Caption="نوع دفع القرض" />
+        <Member Name="Locked" Caption="مقفل" />
+        <Member Name="PaymentDate" Caption="تاريخ الدفع" />
+        <Member Name="SysTenant" Caption="المستأجر النظام" />
+      </OwnMembers>
+    </Class>
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeLoan">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="DueAmountAsOn" Caption="المبلغ المستحق من" />
+        <Member Name="InstallmentStartDate" Caption="تاريخ بدء التقسيط" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization Id="Localization">
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="HCM10.Module.BusinessObjects.PersonnelAdministration.LoanPaymentType" Value="نوع دفع القرض" />
+    </LocalizationGroup>
+  </Localization>
+</Application>

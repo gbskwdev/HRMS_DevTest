@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Employee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Employee">
+              <LayoutGroup Id="Employee_col1">
+                <LayoutItem Id="FirstNameEn" tabindex="2" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="EmployeeLoan_EmployeeLoanRecovery_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="LoanRecoveryMethod" Width="166" />
+      </Columns>
+    </ListView>
+    <DashboardView Id="PayrollSheet">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="PayrollSheet" ViewItem="BasicSalaryRegister" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeDeduction">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeDeduction" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmployeeAttendance">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmployeeAttendance" ViewItem="MonthlyTimeAttendance" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="EmpAttendanceLog">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="EmpAttendanceLog" ViewItem="uscTimeSchedule.ascx" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="AttendanceLog">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="AttendanceLog" ViewItem="uscTimeSchedule.ascx" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="EmployeeLoan_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="EmployeeLoanRecovery_Group" Direction="Vertical" RelativeSize="72.277227722772281">
+            <LayoutItem Id="EmployeeLoanRecovery" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="EmployeeLoan">
+              <LayoutGroup Id="EmployeeLoan_col2">
+                <LayoutItem Id="BalanceDueAmount" RelativeSize="19.35483870967742" />
+                <LayoutItem Id="RecoveryStartDate" Index="4" RelativeSize="23.529411764705884" Removed="True" />
+                <LayoutGroup Id="Autoa6cc0cdb-cdb7-4c80-962b-3c987979a54e">
+                  <LayoutGroup Id="Autoab992e17-efcd-46cd-826e-b897b36755e5">
+                    <LayoutItem Id="RecoveryStartDate" ViewItem="RecoveryStartDate" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="LeaveCancellationRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="LeaveCancellationRequest">
+                <LayoutGroup Id="LeaveCancellationRequest_col2">
+                  <LayoutItem Id="TotalLeaveDays" ViewItem="TotalLeaveDays" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ReturnFromLeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="WorkflowRequest">
+                <LayoutGroup Id="WorkflowRequest_col2">
+                  <LayoutItem Id="ApproverJobTitle" ViewItem="ApproverJobTitle" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SkipPunchRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Item1">
+            <LayoutGroup Id="WorkflowRequest">
+              <LayoutGroup Id="WorkflowRequest_col2">
+                <LayoutItem Id="ApproverJobTitle" ViewItem="ApproverJobTitle" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="TimeOffRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowRequest">
+              <LayoutGroup Id="WorkflowRequest_col2">
+                <LayoutItem Id="ApproverJobTitle" ViewItem="ApproverJobTitle" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
