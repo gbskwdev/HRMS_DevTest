@@ -67,8 +67,8 @@
     <Class Name="HCM10.Module.BusinessObjects.Workflow.General.AssetRequest" DefaultLookupEditorMode="AllItems" />
     <Class Name="HCM10.Module.BusinessObjects.Workflow.General.DocumentRequest">
       <AppearanceRules Id="AppearanceRules">
-        <AppearanceRule Id="docplacedisable" TargetItems="DocumentPlace" Context="DetailView" Enabled="False" Priority="2" Criteria="[WorkflowStep] != [requeststeps] And [IsshownEmploee] = '1'" />
-        <AppearanceRule Id="docplaceenable" Context="DetailView" Criteria="[WorkflowStep] = [requeststeps] And [IsshownEmploee] = '0'" Priority="1" Enabled="True" TargetItems="DocumentPlace" />
+        <AppearanceRule Id="docplacedisable" TargetItems="DocumentPlace" Context="DetailView" Enabled="False" Priority="2" Criteria="[WorkflowStep] != [requeststeps] And [IsshownEmployee] = '1'" />
+        <AppearanceRule Id="docplaceenable" Context="DetailView" Criteria="[WorkflowStep] = [requeststeps] And [IsshownEmployee] = '0'" Priority="1" Enabled="True" TargetItems="DocumentPlace" />
       </AppearanceRules>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.Workflow.General.EmployeeActionRequest">

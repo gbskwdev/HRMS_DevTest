@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="EmployeeRecurringPayment_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="Currency" Caption="Currency" />
+        <PropertyEditor Id="FirstPaymentDate" Caption="First Payment Date" />
+        <PropertyEditor Id="FirstPaymentPeriod" Caption="First Payment Period" />
+        <PropertyEditor Id="PaymentInterval" Caption="Payment Interval" />
+        <PropertyEditor Id="PaymentIntervalPeriod" Caption="Payment Interval Period" />
+        <PropertyEditor Id="PaymentModel" Caption="Payment Model" />
+        <PropertyEditor Id="RecurNumber" Caption="Recur Number" />
+        <PropertyEditor Id="RecurUnit" Caption="Recur Unit" />
+      </Items>
+    </DetailView>
+    <ListView Id="Employee_RecPayment_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Currency" Caption="Currency" />
+        <ColumnInfo Id="RecurNumber" Caption="Recur Number" />
+        <ColumnInfo Id="RecurUnit" Caption="Recur Unit" />
+        <ColumnInfo Id="PaymentModel" Caption="Payment Model" />
+        <ColumnInfo Id="FirstPaymentDate" Caption="First Payment Date" />
+        <ColumnInfo Id="PaymentInterval" Caption="Payment Interval" />
+        <ColumnInfo Id="FirstPaymentPeriod" Caption="First Payment Period" />
+        <ColumnInfo Id="PaymentIntervalPeriod" Caption="Payment Interval Period" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeRecurringPayment_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Currency" Caption="Currency" />
+        <ColumnInfo Id="RecurNumber" Caption="Recur Number" />
+        <ColumnInfo Id="RecurUnit" Caption="Recur Unit" />
+        <ColumnInfo Id="PaymentModel" Caption="Payment Model" />
+        <ColumnInfo Id="FirstPaymentDate" Caption="First Payment Date" />
+        <ColumnInfo Id="PaymentInterval" Caption="Payment Interval" />
+        <ColumnInfo Id="FirstPaymentPeriod" Caption="First Payment Period" />
+        <ColumnInfo Id="PaymentIntervalPeriod" Caption="Payment Interval Period" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeRecurringPayment_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Currency" Caption="Currency" />
+        <ColumnInfo Id="RecurNumber" Caption="Recur Number" />
+        <ColumnInfo Id="RecurUnit" Caption="Recur Unit" />
+        <ColumnInfo Id="PaymentModel" Caption="Payment Model" />
+        <ColumnInfo Id="FirstPaymentDate" Caption="First Payment Date" />
+        <ColumnInfo Id="PaymentInterval" Caption="Payment Interval" />
+        <ColumnInfo Id="FirstPaymentPeriod" Caption="First Payment Period" />
+        <ColumnInfo Id="PaymentIntervalPeriod" Caption="Payment Interval Period" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeRecurringPayment">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="RecurNumber" Caption="رقم متكرر" />
+        <Member Name="Currency" Caption="عملة" />
+        <Member Name="FirstPaymentDate" Caption="تاريخ الدفع الأول" />
+        <Member Name="FirstPaymentPeriod" Caption="مدة الدفع الأولى" />
+        <Member Name="PaymentInterval" Caption="الفاصل الزمني للدفع" />
+        <Member Name="PaymentIntervalPeriod" Caption="مدة الفاصل الزمني للدفع" />
+        <Member Name="PaymentModel" Caption="نموذج الدفع" />
+        <Member Name="RecurUnit" Caption="وحدة متكرر" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

@@ -10,6 +10,8 @@
     TagPrefix="xaf" %>
 <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
 
+<input type="hidden" id="direction" value="ltr" />
+
 <xaf:XafUpdatePanel ID="UPPopupWindowControl" runat="server">
     <xaf:XafPopupWindowControl runat="server" ID="PopupWindowControl" />
 </xaf:XafUpdatePanel>
@@ -163,7 +165,7 @@
             </table>
         </div>
         <div id="viewSite" class="width100" style="float: left">
-           <%-- <div class="divSwipe">
+            <%-- <div class="divSwipe">
                 <div class="swipeLeft">
                     <img src="Images/arrow_left_32px.svg.png" />
                 </div>
@@ -181,6 +183,7 @@
     </div>
 </div>
 
+
 <div id="footer" class="xafFooter width100">
     <div class="xafAlignCenter paddings <%= AdditionalClass %>">
         <xaf:AboutInfoControl ID="AIC" runat="server">Copyright text</xaf:AboutInfoControl>
@@ -189,10 +192,39 @@
 
 
 <script>
-    var link = document.createElement('link');
-    link.setAttribute("rel", "stylesheet");
-    link.setAttribute("type", "text/css");
-    //link.onload = function () { CSSDone(); }
-    link.setAttribute("href", 'Contents/Styles/site.css');
-    document.getElementsByTagName("head")[0].appendChild(link);
+    var direction = $("#direction").val();
+
+    function setCookie(cname, cvalue) {
+        document.cookie = cname + "=" + cvalue;
+    }
+
+    if (direction == "ltr") {
+        setCookie("direction", "ltr");
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                direction = c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    getCookie("direction");
+
+    if (direction == "ltr") {
+        setCookie("direction", "ltr");
+        var link = document.createElement('link');
+        link.setAttribute("rel", "stylesheet");
+        link.setAttribute("type", "text/css");
+        link.setAttribute("href", 'Contents/Styles/site.css');
+        document.getElementsByTagName("head")[0].appendChild(link);
+    }
 </script>
