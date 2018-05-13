@@ -1598,7 +1598,7 @@
         <ColumnInfo Id="EndDate" PropertyName="EndDate" Width="70" Index="3" IsNewNode="True" />
       </Columns>
     </ListView>
-    <DashboardView Id="EmployeeAction" Caption="Employee Action" ImageName="analysis" IsNewNode="True">
+    <DashboardView Id="EmployeeAction" ImageName="analysis" IsNewNode="True">
       <Items IsNewNode="True">
         <CustomUserControlViewItemWeb Id="EmployeeAction" CustomControlPath="~/UserControls/Reports/Analysis/Employees/uscRptEmployeeAction.ascx" Caption="EmployeeAction" IsNewNode="True" />
       </Items>

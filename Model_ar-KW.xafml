@@ -157,6 +157,7 @@
         <Member Name="Active" Caption="نشيط" />
         <Member Name="ExpandActionsInDetailView" Caption="توسيع الإجراءات في طريقة عرض التفاصيل" />
         <Member Name="Name" Caption="الإ سم" />
+        <Member Name="States" Caption="دولة" />
       </OwnMembers>
     </Class>
     <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="انتقال">
@@ -312,7 +313,7 @@
       </OwnMembers>
     </Class>
     <Class Name="DevExpress.Persistent.BaseImpl.BaseObject" Caption="الكائن الأساسي" />
-    <Class Name="DevExpress.Persistent.BaseImpl.DashboardData">
+    <Class Name="DevExpress.Persistent.BaseImpl.DashboardData" Caption=" لوحة المعلومات">
       <OwnMembers>
         <Member Name="Title" Caption="لقب" />
       </OwnMembers>
@@ -398,7 +399,7 @@
         <Member Name="UserName" Caption="اسم المستخدم" />
       </OwnMembers>
     </Class>
-    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2">
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="تقارير">
       <OwnMembers>
         <Member Name="DataTypeCaption" Caption="نوع البيانات" />
         <Member Name="DisplayName" Caption="اسم العرض" />
@@ -453,7 +454,7 @@
       </OwnMembers>
     </Class>
     <Class Name="DevExpress.Xpo.XPCustomObject" Caption="كائن XPCustom" />
-    <Class Name="HCM10.Module.BusinessObjects.AccomodationManagement.AccomodationType" Caption="نوع السكن">
+    <Class Name="HCM10.Module.BusinessObjects.AccomodationManagement.AccomodationType" Caption="نوع الإقامة">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Locked" Caption="مقفل" />
@@ -482,9 +483,9 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.AccomodationManagement.EmployeeAccomodation" Caption="موظف السكن">
+    <Class Name="HCM10.Module.BusinessObjects.AccomodationManagement.EmployeeAccomodation" Caption="سكن الموظفين">
       <OwnMembers>
-        <Member Name="AccomodationType" Caption="نوع السكن" />
+        <Member Name="AccomodationType" Caption="نوع الإقامة" />
         <Member Name="Bed" Caption="سرير" />
         <Member Name="Building" Caption="عمارة" />
         <Member Name="DeductionAmount" Caption="مبلغ مقتطع" />
@@ -712,7 +713,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.Country" Caption="بلد">
+    <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.Country" Caption="البلد">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Locked" Caption="مقفل" />
@@ -840,6 +841,7 @@
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.LoanTypeDetail" Caption="تفاصيل نوع القرض">
       <OwnMembers>
+        <Member Name="LoanType" Caption="نوع القرض" />
         <Member Name="Percent" Caption="النسبة المئوية" />
         <Member Name="WageType" Caption="نوع الأجر" />
       </OwnMembers>
@@ -853,7 +855,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.Nationality" Caption="جنسية">
+    <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.Nationality" Caption="الجنسية">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Locked" Caption="مقفل" />
@@ -901,7 +903,7 @@
         <Member Name="WageType" Caption="نوع الأجر" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.PersonalAction" Caption="تصرف الشخصي">
+    <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.PersonalAction" Caption="إجراء شخصي">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Locked" Caption="مقفل" />
@@ -916,7 +918,7 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="NameAr" Caption="الاسم - AR" />
         <Member Name="NameEn" Caption="الاسم - EN" />
-        <Member Name="PersonalAction" Caption="تصرف الشخصي" />
+        <Member Name="PersonalAction" Caption="إجراء شخصي" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
@@ -929,7 +931,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.Religion" Caption="دين">
+    <Class Name="HCM10.Module.BusinessObjects.GeneralMasterInfo.Religion" Caption="ديانة">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Locked" Caption="مقفل" />
@@ -1021,7 +1023,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.GovtRelationsManagement.Sponsor" Caption="كفيل">
+    <Class Name="HCM10.Module.BusinessObjects.GovtRelationsManagement.Sponsor" Caption="الجهة الراعية">
       <OwnMembers>
         <Member Name="ActvitiyType" Caption="نوع النشاط" />
         <Member Name="Area" Caption="منطقة" />
@@ -1054,7 +1056,7 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="QuotaIssued" Caption="إصدار الحصة" />
         <Member Name="QuotaUsed" Caption="استخدام الحصة" />
-        <Member Name="Sponsor" Caption="كفيل" />
+        <Member Name="Sponsor" Caption="الجهة الراعية" />
         <Member Name="StartDate" Caption="تاريخ البدء" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
@@ -1073,7 +1075,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.OrganizationManagement.OrganizationBankInfo">
+    <Class Name="HCM10.Module.BusinessObjects.OrganizationManagement.OrganizationBankInfo" Caption="معلومات بنك المؤسسة">
       <OwnMembers>
         <Member Name="AccountNo" Caption="رقم حساب" />
         <Member Name="OrganisationUnit" Caption="وحدة المؤسسة" />
@@ -1179,7 +1181,7 @@
         <Member Name="WageType" Caption="نوع الأجر" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.EmployeeGroup" Caption="ملف الراتب">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.EmployeeGroup" Caption="الملف الراتب">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="DaysPerMonth" Caption="أيام لكل شهر" />
@@ -1270,7 +1272,7 @@
         <Member Name="StartDate" Caption="تاريخ البدء" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
         <Member Name="TicketCount" Caption="عدد تذكرة" />
-        <Member Name="TicketType" Caption="نوع تذكرة" />
+        <Member Name="TicketType" Caption="نوع التذكرة" />
       </OwnMembers>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.GratuityAccrualSummary" Caption="مكافأة - ملخص الاستحقاق">
@@ -1310,7 +1312,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.PayrollCalendar" Caption="تقويم الرواتب">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.PayrollCalendar" Caption="تقويم كشوف المرتبات">
       <OwnMembers>
         <Member Name="EndDate" Caption="تاريخ الانتهاء" />
         <Member Name="Locked" Caption="مقفل" />
@@ -1354,7 +1356,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.SalaryRegister" Caption="تسجيل الراتب">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.SalaryRegister" Caption="سجلات الرواتب">
       <OwnMembers>
         <Member Name="Employee" Caption="موظف" />
         <Member Name="ForPeriod" Caption="لمدة" />
@@ -1362,22 +1364,22 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="PayrollResultType" Caption="نوع نتيجة الرواتب" />
         <Member Name="PayrollRunType" Caption="نوع تشغيل رواتب" />
-        <Member Name="SalaryRegisterDetail" Caption="تفاصيل تسجيل الراتب" />
+        <Member Name="SalaryRegisterDetail" Caption="سجلات الرواتب التفاصيل" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.SalaryRegisterDetail" Caption="تفاصيل تسجيل الراتب">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.SalaryRegisterDetail" Caption="سجلات الرواتب التفاصيل">
       <OwnMembers>
         <Member Name="Amount" Caption="قيمة" />
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="Number" Caption="رقم " />
         <Member Name="Rate" Caption="معدل" />
-        <Member Name="SalaryRegister" Caption="تسجيل الراتب" />
+        <Member Name="SalaryRegister" Caption="سجلات الرواتب" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
         <Member Name="WageType" Caption="نوع أجرة" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.SimulationSalaryRegister" Caption="محاكاة تسجيل الراتب">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.SimulationSalaryRegister" Caption="سجل راتب المحاكاة">
       <OwnMembers>
         <Member Name="Employee" Caption="موظف" />
         <Member Name="ForPeriod" Caption="لمدة" />
@@ -1400,14 +1402,14 @@
         <Member Name="WageType" Caption="نوع أجرة" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.SponsorBank" Caption="اسم بنك كفيل ">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.SponsorBank" Caption="البنك الراعي">
       <OwnMembers>
         <Member Name="AccountNumber" Caption="رقم الحساب" />
         <Member Name="EmployeeBank" Caption="اسم بنك موظف" />
         <Member Name="EndDate" Caption="تاريخ الانتهاء" />
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="PaymentBank" Caption="بنك الدفع" />
-        <Member Name="Sponsor" Caption="كفيل" />
+        <Member Name="Sponsor" Caption="الجهة الراعية" />
         <Member Name="StartDate" Caption="تاريخ البدء" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
@@ -1432,7 +1434,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.TicketFare" Caption="أجرة تذكرة">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.TicketFare" Caption="قيمة التذكرة">
       <OwnMembers>
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="OneWayTicketFare" Caption="طريقة واحدة تذكرة الأجرة" />
@@ -1440,10 +1442,10 @@
         <Member Name="ReturnTicketFare" Caption="عودة تذكرة الأجرة" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
         <Member Name="TicketClass" Caption="درجة التذكرة" />
-        <Member Name="TicketRoute" Caption="طريق الرحلة" />
+        <Member Name="TicketRoute" Caption="مسار التذكرة" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.TicketRoute" Caption="طريق الرحلة">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.TicketRoute" Caption="مسار التذكرة">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Locked" Caption="مقفل" />
@@ -1452,7 +1454,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.TicketType" Caption="نوع تذكرة">
+    <Class Name="HCM10.Module.BusinessObjects.PayrollManagement.TicketType" Caption="نوع التذكرة">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Lapse" Caption="هفوة" />
@@ -1646,7 +1648,7 @@
         <Member Name="CodeWithFullNameEn" Caption="رمز والاسم باللغة الإنجليزية" />
         <Member Name="Contract" Caption="عقد" />
         <Member Name="CostDistribution" Caption="توزيع التكاليف" />
-        <Member Name="Country" Caption="بلد" />
+        <Member Name="Country" Caption="البلد" />
         <Member Name="CurrentAddress" Caption="العنوان الحالي" />
         <Member Name="CurrentBranch" Caption="الفرع الحالي" />
         <Member Name="CurrentCompany" Caption="الشركة الحالية" />
@@ -1687,7 +1689,7 @@
         <Member Name="Mobile" Caption="رقم جوال" />
         <Member Name="MotherNameAr" Caption="اسم الأم - Ar" />
         <Member Name="MotherNameEn" Caption="اسم الأم - En" />
-        <Member Name="Nationality" Caption="جنسية" />
+        <Member Name="Nationality" Caption="الجنسية" />
         <Member Name="OnHold" Caption="وقوف" />
         <Member Name="OrgAssignment" Caption="تعيين الشركة" />
         <Member Name="Overtime" Caption="العمل الإضافي" />
@@ -1702,7 +1704,7 @@
         <Member Name="Qualification" Caption="المؤهل العلمي" />
         <Member Name="RecPayment" Caption="تسلم الدفع" />
         <Member Name="Rejoin" Caption="إعادة الانضمام" />
-        <Member Name="Religion" Caption="دين" />
+        <Member Name="Religion" Caption="ديانة" />
         <Member Name="Remuneration" Caption="مكافأة" />
         <Member Name="SampleImage" Caption="صورة نموذجية" />
         <Member Name="SecondNameAr" Caption="اسم ثاني - Ar" />
@@ -1719,7 +1721,7 @@
         <Member Name="ThirdNameEn" Caption="اسم ثالث - En" />
         <Member Name="Ticket" Caption="تذكرة" />
         <Member Name="TicketQuota" Caption="حصة التذكرة" />
-        <Member Name="TicketRoute" Caption="طريق الرحلة" />
+        <Member Name="TicketRoute" Caption="مسار التذكرة" />
         <Member Name="Title" Caption="لقب" />
         <Member Name="TktAdjust" Caption="ضبط التذاكر" />
         <Member Name="Training" Caption="تدريب" />
@@ -1761,7 +1763,7 @@
         <Member Name="WfRequest" Caption="طلب سير العمل" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeAbsenceQuota" Caption="الموظف غياب الحصص">
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeAbsenceQuota" Caption="حصة الإجازات">
       <OwnMembers>
         <Member Name="AbsenceType" Caption="نوع الغياب" />
         <Member Name="DeductionFrom" Caption="اقتطاع من" />
@@ -1782,7 +1784,7 @@
         <Member Name="Employee" Caption="موظف" />
         <Member Name="EndDate" Caption="تاريخ الانتهاء" />
         <Member Name="Locked" Caption="مقفل" />
-        <Member Name="PersonalAction" Caption="تصرف الشخصي" />
+        <Member Name="PersonalAction" Caption="إجراء شخصي" />
         <Member Name="StartDate" Caption="تاريخ البدء" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
@@ -1920,6 +1922,7 @@
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeDisciplinaryDetail">
       <OwnMembers>
+        <Member Name="DisciplinaryDeductionType" Caption="نوع الخصم بسبب إجراء تأديبي" />
         <Member Name="DisciplinaryType" Caption="نوع الإجراء التأديبي" />
         <Member Name="EmployeeDisciplinary" Caption="إجراء تأديبي للموظف" />
         <Member Name="LastDisciplinaryDate" Caption="تاريخ آخر إجراء تأديبي" />
@@ -2175,7 +2178,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
         <Member Name="TicketDate" Caption="تاريخ التذكرة" />
         <Member Name="TicketPaymentType" Caption="نوع دفع التذاكر" />
-        <Member Name="TicketType" Caption="نوع تذكرة" />
+        <Member Name="TicketType" Caption="نوع التذكرة" />
       </OwnMembers>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeTicketQuota" Caption="الحصة تذكرة الموظف">
@@ -2190,7 +2193,7 @@
         <Member Name="QuotaAdjusted" Caption="تم تعديل الحصة" />
         <Member Name="QuotaUsed" Caption="استخدام الحصة" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
-        <Member Name="TicketType" Caption="نوع تذكرة" />
+        <Member Name="TicketType" Caption="نوع التذكرة" />
       </OwnMembers>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeTicketRoute" Caption="موظف طريق الرحلة">
@@ -2200,7 +2203,7 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="StartDate" Caption="تاريخ البدء" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
-        <Member Name="TicketRoute" Caption="طريق الرحلة" />
+        <Member Name="TicketRoute" Caption="مسار التذكرة" />
       </OwnMembers>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeTktAdjustment" Caption="تعديل تذكرة الموظف">
@@ -2214,7 +2217,7 @@
         <Member Name="QuotaAdjusted" Caption="تم تعديل الحصة" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
         <Member Name="TicketPaymentType" Caption="نوع دفع التذاكر" />
-        <Member Name="TicketType" Caption="نوع تذكرة" />
+        <Member Name="TicketType" Caption="نوع التذكرة" />
       </OwnMembers>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeTraining" Caption="تدريب الموظف">
@@ -2352,7 +2355,7 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="MaritalStatus" Caption="الحالة الاجتماعية" />
         <Member Name="Mobile" Caption="رقم جوال" />
-        <Member Name="Nationality" Caption="جنسية" />
+        <Member Name="Nationality" Caption="الجنسية" />
         <Member Name="PermanentAddress" Caption="العنوان الثابت" />
         <Member Name="Photo" Caption="صورة" />
         <Member Name="SecondNameAr" Caption="اسم ثاني - Ar" />
@@ -2689,6 +2692,7 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="NameAr" Caption="الاسم - AR" />
         <Member Name="NameEn" Caption="الاسم - EN" />
+        <Member Name="OvertimeType" Caption="نوع العمل الإضافي" />
         <Member Name="StartDate" Caption="تاريخ البدء" />
         <Member Name="StartTime" Caption="وقت البدء" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
@@ -2713,7 +2717,7 @@
         <Member Name="WednesdayDuty" Caption="يوم الأربعاء توقيت العمل" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.EmployeeDutyPeriod" Caption="مدة عمل الموظف">
+    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.EmployeeDutyPeriod" Caption="فترة عمل الموظف">
       <OwnMembers>
         <Member Name="DutyPeriod" Caption="مدة عمل" />
         <Member Name="Employee" Caption="موظف" />
@@ -2783,6 +2787,7 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="NameAr" Caption="الاسم - AR" />
         <Member Name="NameEn" Caption="الاسم - EN" />
+        <Member Name="OvertimeType" Caption="نوع العمل الإضافي" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
@@ -2848,7 +2853,7 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="MonthlyTimeRegister" Caption="سجل الوقت الشهري" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
-        <Member Name="TimeType" Caption="نوع الوقت" />
+        <Member Name="TimeType" Caption="نوع مرة" />
         <Member Name="TimeValue" Caption="الوقت ثمين" />
       </OwnMembers>
     </Class>
@@ -2944,7 +2949,7 @@
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="SimuTimeRegister" Caption="محاكاة وقت التسجيل" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
-        <Member Name="TimeType" Caption="نوع الوقت" />
+        <Member Name="TimeType" Caption="نوع مرة" />
         <Member Name="TimeValue" Caption="الوقت ثمين" />
       </OwnMembers>
     </Class>
@@ -2960,7 +2965,7 @@
         <Member Name="TransDate" Caption="تاريخ التحويل" />
         <Member Name="TransSource" Caption="مصدر المعاملة" />
         <Member Name="TransTime" Caption="وقت المعاملة" />
-        <Member Name="TransType" Caption="نوع المعاملة" />
+        <Member Name="TransType" Caption="نوع من نقل" />
       </OwnMembers>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TimeLog" Caption="سجل الوقت">
@@ -2993,7 +2998,7 @@
         <Member Name="TimeMgmtStatus" Caption="حالة إدارة الوقت" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TimeRegister" Caption="وقت التسجيل">
+    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TimeRegister" Caption="سجلات الوقت">
       <OwnMembers>
         <Member Name="AbsentDay" Caption="غائب اليوم" />
         <Member Name="ActiveDay" Caption="يوم نشط" />
@@ -3021,8 +3026,10 @@
         <Member Name="Employee" Caption="موظف" />
         <Member Name="InactiveDay" Caption="يوم إناكتيف" />
         <Member Name="LateIn" Caption="متأخر في" />
+        <Member Name="LeaveType" Caption="نوع الإجازة" />
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="OvertimeMinutes" Caption="دقائق الوقت الإضافي" />
+        <Member Name="OvertimeType" Caption="نوع العمل الإضافي" />
         <Member Name="PlannedWorkingDay" Caption="خطة يوم العمل" />
         <Member Name="PlannedWorkingMins" Caption="خطة العمل دقائق" />
         <Member Name="PublicHoliday" Caption="عطلة رسمية" />
@@ -3058,7 +3065,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TimeType" Caption="نوع الوقت">
+    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TimeType" Caption="نوع مرة">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Locked" Caption="مقفل" />
@@ -3067,7 +3074,7 @@
         <Member Name="SysTenant" Caption="المستأجر النظام" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TransType" Caption="نوع المعاملة">
+    <Class Name="HCM10.Module.BusinessObjects.TimeManagement.TransType" Caption="نوع من نقل">
       <OwnMembers>
         <Member Name="Code" Caption="رمز" />
         <Member Name="Locked" Caption="مقفل" />
@@ -3119,7 +3126,7 @@
       <OwnMembers>
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
-        <Member Name="TimeType" Caption="نوع الوقت" />
+        <Member Name="TimeType" Caption="نوع مرة" />
         <Member Name="TimeValue" Caption="الوقت ثمين" />
         <Member Name="YearlyTimeRegister" Caption="سنويا تسجيل الوقت" />
       </OwnMembers>
@@ -3391,7 +3398,7 @@
         <Member Name="RequestStatus" Caption="حالة الطلب" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.Workflow.Leave.LeaveAmendmentRequest" Caption="طلب تغيير الإجازة">
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.Leave.LeaveAmendmentRequest" Caption="طلب تعديل الإجازة">
       <OwnMembers>
         <Member Name="AbsenceType" Caption="نوع الغياب" />
         <Member Name="CalendarDays" Caption="أيام التقويم" />
@@ -3425,7 +3432,7 @@
         <Member Name="WorkflowComments" Caption="تعليقات سير العمل" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.Workflow.Leave.LeavePlanner">
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.Leave.LeavePlanner" Caption="إجازة مخطط">
       <OwnMembers>
         <Member Name="EndDate" Caption="تاريخ الانتهاء" />
         <Member Name="PlannedDays" Caption="الأيام المقررة" />
@@ -3454,7 +3461,7 @@
         <Member Name="WorkflowStep" Caption="خطوة سير العمل" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.Workflow.Leave.ReturnFromLeaveRequest" Caption="العودة من الإجازة">
+    <Class Name="HCM10.Module.BusinessObjects.Workflow.Leave.ReturnFromLeaveRequest" Caption="طلب الرجوع من الإجازة">
       <OwnMembers>
         <Member Name="AbsenceType" Caption="نوع الغياب" />
         <Member Name="actualDays" Caption="الأيام الفعلية" />
@@ -3504,6 +3511,7 @@
         <Member Name="Employee" Caption="موظف" />
         <Member Name="Trainer" Caption="المدرب" />
         <Member Name="TrainingCost" Caption="تكلفة التدريب" />
+        <Member Name="TrainingType" Caption="نوع التدريب" />
         <Member Name="Venue" Caption="المكان" />
       </OwnMembers>
     </Class>
@@ -3613,7 +3621,7 @@
     <CreatableItem ClassName="HCM10.Module.BusinessObjects.OrganizationManagement.JobTitle" Caption="المسمى الوظيفي" />
     <CreatableItem ClassName="HCM10.Module.BusinessObjects.OrganizationManagement.OrganizationUnit" Caption="وحدة المؤسسة" />
     <CreatableItem ClassName="HCM10.Module.BusinessObjects.PersonnelAdministration.Employee" Caption="موظف" />
-    <CreatableItem ClassName="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeDocument" Caption="Employee Document" />
+    <CreatableItem ClassName="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeDocument" Caption="مستند الموظف" />
   </CreatableItems>
   <Localization>
     <LocalizationGroup Name="Controls">
@@ -3654,7 +3662,7 @@
       <LocalizationGroup Name="HCM10.Module.BusinessObjects.PayrollManagement.BillingType" Value="نوع نفقة">
         <LocalizationItem Name="Deduction" Value="اقتطاع" />
         <LocalizationItem Name="Earning" Value="أرباح" />
-        <LocalizationItem Name="TimeType" Value="نوع الوقت" />
+        <LocalizationItem Name="TimeType" Value="نوع مرة" />
       </LocalizationGroup>
       <LocalizationGroup Name="HCM10.Module.BusinessObjects.PayrollManagement.DeductionUnit" Value="وحدة الاستقطاع">
         <LocalizationItem Name="Percentage" Value="النسبة المئوية" />
@@ -3729,6 +3737,7 @@
       </LocalizationGroup>
     </LocalizationGroup>
     <LocalizationGroup Name="Namespaces">
+      <LocalizationItem Name="DevExpress.Persistent.AuditTrail" Value="درب التدقيق" />
       <LocalizationItem Name="HCM10.Module.BusinessObjects.AccomodationManagement" Value="إدارة الإقامة" />
       <LocalizationItem Name="HCM10.Module.BusinessObjects.PersonnelAdministration" Value="شؤون الموظفين" />
       <LocalizationItem Name="HCM10.Module.BusinessObjects.SuccessionManagement" Value="إدارة التعاقب" />
@@ -3746,7 +3755,7 @@
               <Item Id="EmployeeBank_ListView" Caption="بنك" />
               <Item Id="EmployeeTimePolicy_ListView" Caption="قواعد الوقت" />
               <Item Id="EmployeeDependant_ListView" Caption="يعتمد" />
-              <Item Id="EmployeeTicketRoute_ListView" Caption="طريق الرحلة" />
+              <Item Id="EmployeeTicketRoute_ListView" Caption="مسار التذكرة" />
               <Item Id="EmployeeWorkflowRole_ListView" Caption="دور سير العمل" />
               <Item Id="EmployeeDelegation_ListView" Caption="وفد" />
               <Item Id="EmployeeDate_ListView" Caption="تاريخ المواصفات" />
@@ -3775,30 +3784,31 @@
           </Item>
           <Item Id="Time Management" Caption="إدارة الوقت">
             <Items>
-              <Item Id="EmployeeDutyPeriod_ListView" Caption="العمل البديل للموظف" />
+              <Item Id="EmployeeDutyPeriod_ListView" Caption="فترة عمل الموظف" />
               <Item Id="EmployeeSubstituteDuty_ListView" Caption="العمل البديل للموظف" />
               <Item Id="EmployeeTimesheet_ListView" Caption="وقت الموظف التفاصيل" />
               <Item Id="TimeEvent_ListView" Caption="وقت الحدث" />
-              <Item Id="TimeRegister_ListView" Caption="Time Register" />
+              <Item Id="TimeRegister_ListView" Caption="سجلات الوقت" />
             </Items>
           </Item>
           <Item Id="Payroll Management" Caption="إدارة الرواتب">
             <Items>
               <Item Id="EmployeeAbsence_ListView" Caption="إجازة" />
               <Item Id="EmployeeAbsenceQuota_ListView" Caption="حصة الإجازات" />
-              <Item Id="EmployeeAttendance_ListView" Caption="المواظبة" />
+              <Item Id="EmployeeAttendance_ListView" Caption="المواظبة موظف" />
               <Item Id="EmployeeAttendanceQuota_ListView" Caption="الحصة المواظبة" />
               <Item Id="EmployeePayment_ListView" Caption="دفع" />
               <Item Id="EmployeeOvertime_ListView" Caption="العمل الإضافي" />
               <Item Id="EmployeeTicket_ListView" Caption="تذكرة" />
               <Item Id="Employee_TicketQuota_ListView" Caption="حصة التذكرة" />
               <Item Id="EmployeeGratuity_ListView" Caption="مكافأة" />
+              <Item Id="EmployeeGratuityQuota_ListView" Caption="حصة المكافآت للموظف" />
               <Item Id="EmployeeLoan_ListView" Caption="قرض" />
               <Item Id="EmployeeRecurringPayment_ListView" Caption="تسلم الدفع" />
               <Item Id="Employee_AbsAdjust_ListView" Caption="تعديل الغياب" />
               <Item Id="Employee Tkt Adjustment" Caption="تعديل التذكرة" />
               <Item Id="PayrollControlRecord_ListView" Caption="سجل التحكم في كشف الرواتب" />
-              <Item Id="SalaryRegister_ListView" Caption="Salary Register" />
+              <Item Id="SalaryRegister_ListView" Caption="سجلات الرواتب" />
             </Items>
           </Item>
         </Items>
@@ -3819,15 +3829,15 @@
           </Item>
           <Item Id="Leave_Listview" Caption="إجازة">
             <Items>
-              <Item Id="LeaveRequest_ListView" Caption="طلب تعديل الإجازة" />
-              <Item Id="LeaveAmendmentRequest_ListView" Caption="طلب الرجوع من الإجازة" />
+              <Item Id="LeaveRequest_ListView" Caption="طلب الإجازة" />
+              <Item Id="LeaveAmendmentRequest_ListView" Caption="طلب تعديل الإجازة" />
               <Item Id="LeaveCancellationRequest_ListView" Caption="إلغاء طلب إجازة" />
-              <Item Id="ReturnFromLeaveRequest_Listview" Caption="طلب إجازة" />
+              <Item Id="ReturnFromLeaveRequest_Listview" Caption="طلب الرجوع من الإجازة" />
             </Items>
           </Item>
           <Item Id="TimeOffRequest_ListView" Caption="طلب إجازة" />
           <Item Id="TravelDeskRequest_ListView" Caption="دور سير العمل" />
-          <Item Id="WorkflowConfiguration_ListView">
+          <Item Id="WorkflowConfiguration_ListView" Caption="إعداد سير العمل">
             <Items>
               <Item Id="WorkflowRole_ListView" Caption="دور سير العمل" />
             </Items>
@@ -3837,9 +3847,9 @@
       <Item Id="ProcessPayroll" Caption="عملية الرواتب">
         <Items>
           <Item Id="PayrollControlRecord_ListView" Caption="سجل التحكم في كشف الرواتب" />
-          <Item Id="TimeRegister_ListView" Caption="Time Register" />
+          <Item Id="TimeRegister_ListView" Caption="سجلات الوقت" />
           <Item Id="PayrollEngine" Caption="محرك المرتبات" />
-          <Item Id="SalaryRegister_ListView" Caption="مقدم الطلب" />
+          <Item Id="SalaryRegister_ListView" Caption="سجلات الرواتب" />
           <Item Id="BankFile" Caption="ملف البنك" />
           <Item Id="RosterSchedule" Caption="جدول ورديات العمل" />
         </Items>
@@ -3849,6 +3859,7 @@
           <Item Id="Analysis_ListView" Caption="تحليل">
             <Items>
               <Item Id="NewOrgUnitChart" Caption="مخطط المنظمة" />
+              <Item Id="DocumentExpiry" Caption="انتهاء صلاحية الوثيقة" />
               <Item Id="employee" Caption="موظف">
                 <Items>
                   <Item Id="Employee Chart" Caption="مخطط الموظف" />
@@ -3859,14 +3870,15 @@
                   <Item Id="EmployeeAction" Caption="موظف مبادرة" ToolTip="موظف مبادرة" />
                   <Item Id="EmployeeAttendance" Caption="المواظبة موظف" ToolTip="المواظبة موظف" />
                   <Item Id="EmployeeDeduction" Caption="الخصم للموظف" />
-                  <Item Id="EmployeeIncentive" Caption="حافز الموظف" />
-                  <Item Id="EmpNonResumption" Caption="موظف غير استرداد" />
-                  <Item Id="EmpResumption" Caption="استئناف الموظف" />
+                  <Item Id="EmployeeIncentive" ToolTip="حافز الموظف" Caption="حافز الموظف" />
+                  <Item Id="EmpNonResumption" ToolTip="موظف غير استرداد" Caption="موظف غير استرداد" />
+                  <Item Id="EmpResumption" ToolTip="استئناف الموظف" Caption="استئناف الموظف" />
                   <Item Id="ExitStaff" Caption="خروج الموظفين" />
-                  <Item Id="LeaveByDept" ToolTip="موظف يغادر قسم الحكمة" />
+                  <Item Id="LeaveByDept" Caption="الغياب سجل من قبل الإدارات" ToolTip="موظف يغادر قسم الحكمة" />
                   <Item Id="LoanByDept" Caption="القرض حسب القسم" />
                   <Item Id="MonthlyTimeAttendance" Caption="سجل الحضور الشهري" />
                   <Item Id="NewHire" Caption="تعيين جديد" ToolTip="تعيين جديد" />
+                  <Item Id="StaffOvertime" ToolTip="موظف تقرير العمل الإضافي" Caption="موظف تقرير العمل الإضافي" />
                 </Items>
               </Item>
               <Item Id="Payroll" Caption="تقارير كشف الرواتب" ToolTip="تحليل الرواتب">
@@ -3874,15 +3886,17 @@
                   <Item Id="BasicSalaryRegister" Caption="سجل الرواتب الأساسية" />
                 </Items>
               </Item>
-              <Item Id="SalaryRegister" Caption="تسجيل الراتب" />
+              <Item Id="SalaryRegister" Caption="سجلات الرواتب" />
               <Item Id="Time">
                 <Items>
-                  <Item Id="TimeAnalysisByDept" Caption="وقت التسجيل" />
+                  <Item Id="TimeAnalysisByDept" Caption="سجلات الوقت" />
                   <Item Id="AttendanceLog" Caption="سجل الحضور" />
                   <Item Id="Audit" Caption="تدقيق" />
                   <Item Id="EmpAttendanceLog" Caption="سجل حضور الموظفين" />
                 </Items>
               </Item>
+              <Item Id="AuditTrail" Caption="درب التدقيق" />
+              <Item Id="LeavePlanner" Caption="إجازة مخطط" />
             </Items>
           </Item>
           <Item Id="Dashboards">
@@ -3905,27 +3919,28 @@
       <Item Id="State Machine" Caption="جهاز الحالة" />
       <Item Id="Administration" Caption="الإدارة">
         <Items>
-          <Item Id="Org Management">
+          <Item Id="Org Management" Caption="إدارة المؤسسة">
             <Items>
               <Item Id="JobTitle_ListView" Caption="المسمى الوظيفي" />
+              <Item Id="OrganizationBankInfo" Caption="معلومات بنك المؤسسة" />
               <Item Id="OrganizationUnit_ListView" Caption="وحدة المؤسسة" />
               <Item Id="Position_ListView" Caption="موقف" />
             </Items>
           </Item>
           <Item Id="Time Management" Caption="إدارة الوقت">
             <Items>
-              <Item Id="BreakShift_ListView" Caption="Break Shift" />
+              <Item Id="BreakShift_ListView" Caption="استراحة العمل" />
               <Item Id="Duty_ListView" Caption="فترة العمل" />
               <Item Id="DutyPeriod_ListView" Caption="تقويم العطلات" />
-              <Item Id="HolidayCalendar_ListView" Caption="سجل وقت الحافز" />
+              <Item Id="HolidayCalendar_ListView" Caption="عطلة التقويم" />
               <Item Id="SimulationTimeRegister_ListView" Caption="سجل وقت الحافز" />
-              <Item Id="TimePolicy_ListView" Caption="نقل الوقت" />
-              <Item Id="TimeTransfer_ListView" Caption="نوع نقل الوقت" />
-              <Item Id="TimeTransferType_ListView" Caption="نوع الوقت" />
-              <Item Id="TimeType_ListView" Caption="نوع الوقت" />
-              <Item Id="TransType_ListView" Caption="جدول عمل الموظف" />
+              <Item Id="TimePolicy_ListView" Caption="سياسة الوقت" />
+              <Item Id="TimeTransfer_ListView" Caption="نقل الوقت" />
+              <Item Id="TimeTransferType_ListView" Caption="نوع نقل الوقت" />
+              <Item Id="TimeType_ListView" Caption="نوع مرة" />
+              <Item Id="TransType_ListView" Caption="نوع من نقل" />
               <Item Id="EmployeeDutySchedule_ListView" Caption="جدول عمل الموظف" />
-              <Item Id="DailyDuty_ListView" Caption="Daily Duty" />
+              <Item Id="DailyDuty_ListView" Caption="العمل اليومي" />
               <Item Id="RosterDailyDuty_ListView" Caption="فترة ورديات العمل" />
               <Item Id="RosterDutyPeriod_ListView" Caption="تفاصيل فترة ورديات العمل" />
               <Item Id="RosterDutyPeriodDetail_ListView" Caption="جدول ورديات العمل" />
@@ -3939,21 +3954,21 @@
             <Items>
               <Item Id="AbsenceDeductionRule_ListView" Caption="قاعدة الخصم على الغياب" />
               <Item Id="AbsencePayment_ListView" Caption="نوع الإجازة" />
-              <Item Id="AbsenceType_ListView" Caption="نوع الحضور" />
+              <Item Id="AbsenceType_ListView" Caption="نوع الإجازة" />
               <Item Id="AttendanceType_ListView" Caption="نوع الحضور" />
-              <Item Id="EmployeeGroup_ListView" Caption="Salary Profile" />
+              <Item Id="EmployeeGroup_ListView" Caption="الملف الراتب" />
               <Item Id="GratuityAccrualSummary_ListView" Caption="ملخص استحقاق الإجازات" />
               <Item Id="LeaveAccrualSummary_ListView" Caption="منطقة كشف الرواتب" />
               <Item Id="PayrollArea_ListView" Caption="تقويم كشف الرواتب" />
-              <Item Id="PayrollCalendar_ListView" Caption="تقويم كشف الرواتب" />
-              <Item Id="PayrollPeriod_ListView" Caption="سجل راتب الحافز" />
-              <Item Id="SimulationSalaryRegister_ListView" Caption="سجل راتب الحافز" />
+              <Item Id="PayrollCalendar_ListView" Caption="تقويم كشوف المرتبات" />
+              <Item Id="PayrollPeriod_ListView" Caption="رواتب المدة" />
+              <Item Id="SimulationSalaryRegister_ListView" Caption="سجل راتب المحاكاة" />
               <Item Id="SponsorBank_ListView" Caption="البنك الراعي" />
               <Item Id="TicketAccrualSummary_ListView" Caption="Ticket Accrual Summary" />
-              <Item Id="TicketClass_ListView" Caption="قيمة التذكرة" />
-              <Item Id="TicketFare_ListView" Caption="مسار التذكرة" />
-              <Item Id="TicketRoute_ListView" Caption="نوع التذكرة" />
-              <Item Id="TicketType_ListView" Caption="نوع الأجر" />
+              <Item Id="TicketClass_ListView" Caption="درجة التذكرة" />
+              <Item Id="TicketFare_ListView" Caption="قيمة التذكرة" />
+              <Item Id="TicketRoute_ListView" Caption="مسار التذكرة" />
+              <Item Id="TicketType_ListView" Caption="نوع التذكرة" />
               <Item Id="WageType_ListView" Caption="نوع الأجر" />
               <Item Id="WageTypeRegister_ListView" Caption="Wage Type Register" />
             </Items>
@@ -3962,8 +3977,8 @@
             <Items>
               <Item Id="GovtJobCategory_ListView" Caption="فئة الوظيفة الحكومية" />
               <Item Id="GovtJobTitle_ListView" Caption="المسمى الوظيفي الحكومي" />
-              <Item Id="OrganizationDocument" Caption="الجهة الراعية" />
-              <Item Id="Sponsor_ListView" Caption="المسمى الوظيفي للجهة الراعية" />
+              <Item Id="OrganizationDocument" Caption="المستند الشركة" />
+              <Item Id="Sponsor_ListView" Caption="الجهة الراعية" />
               <Item Id="SponsorJobTitle_ListView" Caption="المسمى الوظيفي للجهة الراعية" />
             </Items>
           </Item>
@@ -3973,30 +3988,31 @@
               <Item Id="Asset_ListView" Caption="الأصول" />
               <Item Id="AssetType_ListView" Caption="نوع الأصول" />
               <Item Id="Bank_ListView" Caption="بنك" />
-              <Item Id="City_ListView" Caption="نوع العقد" />
-              <Item Id="ContractType_ListView" Caption="البلد" />
-              <Item Id="Country_ListView" Caption="العملة" />
+              <Item Id="City_ListView" Caption="مدينة" />
+              <Item Id="ContractType_ListView" Caption="نوع العقد" />
+              <Item Id="Country_ListView" Caption="البلد" />
               <Item Id="Currency_ListView" Caption="العملة" />
-              <Item Id="DateType_ListView" Caption="نوع التابع" />
-              <Item Id="DependantType_ListView" Caption="نوع الإجراء التأديبي" />
+              <Item Id="DateType_ListView" Caption="نوع تاريخ" />
+              <Item Id="DependantType_ListView" Caption="نوع عالة" />
               <Item Id="DisciplinaryType_ListView" Caption="نوع الإجراء التأديبي" />
               <Item Id="DisciplinaryDeductionType_ListView" Caption="نوع الخصم بسبب إجراء تأديبي" />
               <Item Id="DocumentType_ListView" Caption="Document Type" />
-              <Item Id="Governate_ListView" Caption="نوع التظلم" />
+              <Item Id="Governate_ListView" Caption="محافظة" />
               <Item Id="GrievanceType_ListView" Caption="نوع التظلم" />
-              <Item Id="LanguageInfo_ListView" Caption="Language Info" />
-              <Item Id="LoanType_ListView" Caption="الحالة الاجتماعية" />
-              <Item Id="MaritalStatus_ListView" Caption="الجنسية" />
+              <Item Id="LanguageInfo_ListView" Caption="معلومات اللغة" />
+              <Item Id="LoanType_ListView" Caption="نوع القرض" />
+              <Item Id="MaritalStatus_ListView" Caption="الحالة الاجتماعية" />
               <Item Id="Nationality_ListView" Caption="الجنسية" />
-              <Item Id="OvertimeType_ListView" Caption="إجراء شخصي" />
-              <Item Id="PersonalAction_ListView" Caption="سبب الإجراء الشخصي" />
-              <Item Id="PersonalActionReason_ListView" Caption="المؤهلات" />
+              <Item Id="NumberSeries" Caption="سلسلة الأرقام" />
+              <Item Id="OvertimeType_ListView" Caption="نوع العمل الإضافي" />
+              <Item Id="PersonalAction_ListView" Caption="إجراء شخصي" />
+              <Item Id="PersonalActionReason_ListView" Caption="سبب الإجراء الشخصي" />
               <Item Id="Qualification_ListView" Caption="المؤهلات" />
-              <Item Id="Religion_ListView" Caption="حالة" />
-              <Item Id="State_ListView" Caption="نوع المهمة" />
+              <Item Id="Religion_ListView" Caption="ديانة" />
+              <Item Id="State_ListView" Caption="دولة" />
               <Item Id="TaskType_ListView" Caption="نوع المهمة" />
-              <Item Id="Title_ListView" Caption="عنوان" />
-              <Item Id="TrainingType_ListView" Caption="نوع التأشيرة" />
+              <Item Id="Title_ListView" Caption="لقب" />
+              <Item Id="TrainingType_ListView" Caption="نوع التدريب" />
               <Item Id="VisaType_ListView" Caption="نوع التأشيرة" />
             </Items>
           </Item>
@@ -4044,14 +4060,14 @@
       </Item>
       <Item Id="Accomodation Management" Caption="إدارة الإقامة">
         <Items>
-          <Item Id="EmployeeAccomodation_ListView" Caption="Employee Accomodation" />
-          <Item Id="AccomodationType_ListView" Caption="الموقع" />
+          <Item Id="EmployeeAccomodation_ListView" Caption="سكن الموظفين" />
+          <Item Id="AccomodationType_ListView" Caption="نوع الإقامة" />
           <Item Id="Location_ListView" Caption="الموقع" />
           <Item Id="Building_ListView" Caption="مبنى" />
           <Item Id="Floor_ListView" Caption="أرضية" />
-          <Item Id="Flat_ListView" Caption="غرفة" />
+          <Item Id="Flat_ListView" Caption="شقه" />
           <Item Id="Room_ListView" Caption="غرفة" />
-          <Item Id="Bed_ListView" Caption="مشروع الموظف" />
+          <Item Id="Bed_ListView" Caption="سرير" />
         </Items>
       </Item>
       <Item Id="Project Management" Caption="إدارة المشروعات">
@@ -4383,7 +4399,7 @@
         <PropertyEditor Id="Locked" Caption="الحالة الاجتماعية" />
         <PropertyEditor Id="MaritalStatus" Caption="الحالة الاجتماعية" />
         <PropertyEditor Id="Mobile" Caption="الجنسية" />
-        <PropertyEditor Id="Nationality" Caption="العنوان الدائم" />
+        <PropertyEditor Id="Nationality" Caption="الجنسية" />
         <PropertyEditor Id="PermanentAddress" Caption="العنوان الدائم" />
         <PropertyEditor Id="Photo" Caption="صور" />
         <PropertyEditor Id="SecondNameAr" Caption="الاسم الثاني عربي" />
@@ -4465,7 +4481,7 @@
         <ColumnInfo Id="ApplicantCV" Caption="السيرة الذاتية لمقدم الطلب" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
-        <ColumnInfo Id="LanguageInfo" Caption="الكفاءة" />
+        <ColumnInfo Id="LanguageInfo" Caption="معلومات اللغة" />
         <ColumnInfo Id="Proficiency" Caption="الكفاءة" />
       </Columns>
     </ListView>
@@ -4726,9 +4742,9 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DashboardView Id="Audit" Caption="انضباطي">
+    <DashboardView Id="Audit" Caption="درب التدقيق">
       <Items>
-        <CustomUserControlViewItemWeb Id="audit" Caption="انضباطي" />
+        <CustomUserControlViewItemWeb Id="audit" Caption="درب التدقيق" />
       </Items>
     </DashboardView>
     <DetailView Id="AuditDataItemPersistent_DetailView">
@@ -4828,7 +4844,7 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DetailView Id="BreakShift_DetailView" Caption="Break Shift">
+    <DetailView Id="BreakShift_DetailView" Caption="استراحة العمل">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="EndDate" Caption="تاريخ الانتهاء" />
@@ -4849,7 +4865,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="BreakShift_ListView" Caption="Break Shift">
+    <ListView Id="BreakShift_ListView" Caption="استراحة العمل">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -4863,7 +4879,7 @@
         <ColumnInfo Id="IsPaid" Caption="مدفوعة" />
       </Columns>
     </ListView>
-    <ListView Id="BreakShift_LookupListView" Caption="Break Shift">
+    <ListView Id="BreakShift_LookupListView" Caption="استراحة العمل">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -5352,7 +5368,7 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="Country" Caption="بلد" />
+            <LayoutGroup Id="Country" Caption="البلد" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
@@ -5413,7 +5429,7 @@
     </ListView>
     <DetailView Id="CVLanguage_DetailView" Caption="لغة السيرة الذاتية">
       <Items>
-        <PropertyEditor Id="LanguageInfo" Caption="Language Info" />
+        <PropertyEditor Id="LanguageInfo" Caption="معلومات اللغة" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="Proficiency" Caption="الكفاءة" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
@@ -5431,14 +5447,14 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="ApplicantCV" Caption="السيرة الذاتية لمقدم الطلب" />
-        <ColumnInfo Id="LanguageInfo" Caption="Language Info" />
+        <ColumnInfo Id="LanguageInfo" Caption="معلومات اللغة" />
         <ColumnInfo Id="Proficiency" Caption="الكفاءة" />
       </Columns>
     </ListView>
     <ListView Id="CVLanguage_LookupListView" Caption="لغة السيرة الذاتية">
       <Columns>
         <ColumnInfo Id="ApplicantCV" Caption="السيرة الذاتية لمقدم الطلب" />
-        <ColumnInfo Id="LanguageInfo" Caption="Language Info" />
+        <ColumnInfo Id="LanguageInfo" Caption="معلومات اللغة" />
         <ColumnInfo Id="Proficiency" Caption="الكفاءة" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -5558,9 +5574,9 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="DailyDuty_DetailView" Caption="Daily Duty">
+    <DetailView Id="DailyDuty_DetailView" Caption="العمل اليومي">
       <Items>
-        <PropertyEditor Id="BreakShift" Caption="Break Shift" />
+        <PropertyEditor Id="BreakShift" Caption="استراحة العمل" />
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="EndDate" Caption="تاريخ الانتهاء" />
         <PropertyEditor Id="EndTime" Caption="وقت النهاية" />
@@ -5579,7 +5595,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="DailyDuty_ListView" Caption="Daily Duty">
+    <ListView Id="DailyDuty_ListView" Caption="العمل اليومي">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -5590,10 +5606,10 @@
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
         <ColumnInfo Id="StartTime" Caption="وقت البدء" />
         <ColumnInfo Id="EndTime" Caption="وقت النهاية" />
-        <ColumnInfo Id="BreakShift" Caption="Break Shift" />
+        <ColumnInfo Id="BreakShift" Caption="استراحة العمل" />
       </Columns>
     </ListView>
-    <ListView Id="DailyDuty_LookupListView" Caption="Daily Duty">
+    <ListView Id="DailyDuty_LookupListView" Caption="العمل اليومي">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -5615,17 +5631,17 @@
     </ListView>
     <DetailView Id="DashboardData_DetailView">
       <Items>
-        <PropertyEditor Id="Title" Caption="عنوان" />
+        <PropertyEditor Id="Title" Caption="لقب" />
       </Items>
     </DetailView>
     <ListView Id="DashboardData_ListView">
       <Columns>
-        <ColumnInfo Id="Title" Caption="عنوان" />
+        <ColumnInfo Id="Title" Caption="لقب" />
       </Columns>
     </ListView>
     <ListView Id="DashboardData_LookupListView">
       <Columns>
-        <ColumnInfo Id="Title" Caption="عنوان" />
+        <ColumnInfo Id="Title" Caption="لقب" />
       </Columns>
     </ListView>
     <DetailView Id="DashboardName_DetailView">
@@ -5643,7 +5659,7 @@
         <ColumnInfo Id="Name" Caption="اسم" />
       </Columns>
     </ListView>
-    <DetailView Id="DateType_DetailView" Caption="Date Type">
+    <DetailView Id="DateType_DetailView" Caption="نوع تاريخ">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -5651,8 +5667,15 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DateType" Caption="نوع تاريخ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="DateType_ListView" Caption="Date Type">
+    <ListView Id="DateType_ListView" Caption="نوع تاريخ">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -5661,7 +5684,7 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="DateType_LookupListView" Caption="Date Type">
+    <ListView Id="DateType_LookupListView" Caption="نوع تاريخ">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -5717,7 +5740,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="DependantType_DetailView" Caption="نوع التابع">
+    <DetailView Id="DependantType_DetailView" Caption="نوع عالة">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -5725,8 +5748,15 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DependantType" Caption="نوع عالة" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="DependantType_ListView" Caption="نوع التابع">
+    <ListView Id="DependantType_ListView" Caption="نوع عالة">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -5735,7 +5765,7 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="DependantType_LookupListView" Caption="نوع التابع">
+    <ListView Id="DependantType_LookupListView" Caption="نوع عالة">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -5868,6 +5898,7 @@
     </DetailView>
     <ListView Id="DocAttachment_ListView" Caption="Doc Attachment" />
     <ListView Id="DocAttachment_LookupListView" Caption="Doc Attachment" />
+    <DashboardView Id="DocumentExpiry" Caption="انتهاء صلاحية الوثيقة" />
     <DetailView Id="DocumentPrintForm_DetailView" Caption="نموذج طباعة مستند">
       <Items>
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -6013,7 +6044,7 @@
     </ListView>
     <DetailView Id="Duty_DetailView" Caption="مهمة">
       <Items>
-        <PropertyEditor Id="BreakShift" Caption="Break Shift" />
+        <PropertyEditor Id="BreakShift" Caption="استراحة العمل" />
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="EndDate" Caption="تاريخ الانتهاء" />
         <PropertyEditor Id="EndTime" Caption="وقت النهاية" />
@@ -6043,7 +6074,7 @@
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
         <ColumnInfo Id="StartTime" Caption="وقت البدء" />
         <ColumnInfo Id="EndTime" Caption="وقت النهاية" />
-        <ColumnInfo Id="BreakShift" Caption="Break Shift" />
+        <ColumnInfo Id="BreakShift" Caption="استراحة العمل" />
       </Columns>
     </ListView>
     <ListView Id="Duty_LookupListView" Caption="مهمة">
@@ -6209,7 +6240,7 @@
         <ColumnInfo Id="LeavePaymentType" Caption="نوع سداد الإجازة" />
       </Columns>
     </ListView>
-    <ListView Id="Employee_AbsenceQuota_ListView" Caption="Employee Absence Quota">
+    <ListView Id="Employee_AbsenceQuota_ListView" Caption="حصة الإجازات">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -6224,7 +6255,7 @@
         <ColumnInfo Id="QuotaAdjusted" Caption="حصة معدَّلة" />
       </Columns>
     </ListView>
-    <ListView Id="Employee_Action_ListView" Caption="Employee Action">
+    <ListView Id="Employee_Action_ListView" Caption="موظف مبادرة">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
@@ -6326,7 +6357,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="DateType" Caption="Date Type" />
+        <ColumnInfo Id="DateType" Caption="نوع تاريخ" />
         <ColumnInfo Id="DateData" Caption="Date Data" />
         <ColumnInfo Id="DayData" Caption="Day Data" />
       </Columns>
@@ -6346,7 +6377,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
-        <ColumnInfo Id="DependantType" Caption="نوع التابع" />
+        <ColumnInfo Id="DependantType" Caption="نوع عالة" />
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
         <ColumnInfo Id="BirthDate" Caption="تاريخ الميلاد" />
         <ColumnInfo Id="Gender" Caption="جنس" />
@@ -6447,7 +6478,7 @@
         <PropertyEditor Id="Ticket" Caption="تذكرة" />
         <PropertyEditor Id="TicketQuota" Caption="Ticket Quota" />
         <PropertyEditor Id="TicketRoute" Caption="مسار التذكرة" />
-        <PropertyEditor Id="Title" Caption="عنوان" />
+        <PropertyEditor Id="Title" Caption="لقب" />
         <PropertyEditor Id="TktAdjust" Caption="Tkt Adjust" />
         <PropertyEditor Id="Training" Caption="تدريب" />
         <PropertyEditor Id="WFRole" Caption="WFRole" />
@@ -6481,7 +6512,7 @@
         <ColumnInfo Id="Comments" Caption="تعليقات" />
       </Columns>
     </ListView>
-    <ListView Id="Employee_Document_ListView" Caption="Employee Document">
+    <ListView Id="Employee_Document_ListView" Caption="مستند الموظف">
       <Columns>
         <ColumnInfo Id="DocAttachment" Caption="مرفق المستند " />
         <ColumnInfo Id="DocumentHtml" Caption="Document Html" />
@@ -6499,7 +6530,7 @@
         <ColumnInfo Id="Description" Caption="وصف" />
       </Columns>
     </ListView>
-    <ListView Id="Employee_Document_ListView_News" Caption="Employee Document">
+    <ListView Id="Employee_Document_ListView_News" Caption="مستند الموظف">
       <Columns>
         <ColumnInfo Id="DocumentHtml" Caption="Document Html" />
         <ColumnInfo Id="Employee" Caption="موظف" />
@@ -6543,7 +6574,7 @@
         <ColumnInfo Id="Employee" Caption="موظف" />
       </Columns>
     </ListView>
-    <ListView Id="Employee_FnFPayment_ListView">
+    <ListView Id="Employee_FnFPayment_ListView" Caption="الموظف الكامل والدفع النهائي">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
@@ -6573,7 +6604,7 @@
         <ColumnInfo Id="CompensateLoanAmount" Caption="تعويض مبلغ القرض" />
       </Columns>
     </ListView>
-    <ListView Id="Employee_Gratuity_ListView" Caption="Employee Gratuity">
+    <ListView Id="Employee_Gratuity_ListView" Caption="مكافأة الموظف">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
@@ -6648,7 +6679,7 @@
         <ColumnInfo Id="Telephone" Caption="الهاتف" />
         <ColumnInfo Id="ThirdNameAr" Caption="الاسم الثالث بالعربية" />
         <ColumnInfo Id="ThirdNameEn" Caption="الاسم الثالث الإنجليزية" />
-        <ColumnInfo Id="Title" Caption="عنوان" />
+        <ColumnInfo Id="Title" Caption="لقب" />
         <ColumnInfo Id="ZipCode" Caption="الرمز البريدي" />
         <ColumnInfo Id="Photo" Caption="صور" />
         <ColumnInfo Id="Code" Caption="رمز" />
@@ -6670,7 +6701,7 @@
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
-        <ColumnInfo Id="LoanType" Caption="Loan Type" />
+        <ColumnInfo Id="LoanType" Caption="نوع القرض" />
         <ColumnInfo Id="StartDate" Caption="تاريخ البدء" />
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
         <ColumnInfo Id="DueAmount" Caption="المبلغ المستحق" />
@@ -6891,7 +6922,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="TrainingType" Caption="Training Type" />
+        <ColumnInfo Id="TrainingType" Caption="نوع التدريب" />
         <ColumnInfo Id="TrainingDate" Caption="Training Date" />
       </Columns>
     </ListView>
@@ -7022,7 +7053,7 @@
         <ColumnInfo Id="WfRequest" Caption="Wf Request" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeAbsenceQuota_DetailView" Caption="Employee Absence Quota">
+    <DetailView Id="EmployeeAbsenceQuota_DetailView" Caption="حصة الإجازات">
       <Items>
         <PropertyEditor Id="AbsenceType" Caption="نوع الغياب" />
         <PropertyEditor Id="DeductionFrom" Caption="الخصم من" />
@@ -7039,12 +7070,12 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="EmployeeAbsenceQuota" Caption="الموظف غياب الحصص" />
+            <LayoutGroup Id="EmployeeAbsenceQuota" Caption="حصة الإجازات" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="EmployeeAbsenceQuota_ListView" Caption="Employee Absence Quota">
+    <ListView Id="EmployeeAbsenceQuota_ListView" Caption="حصة الإجازات">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -7059,7 +7090,7 @@
         <ColumnInfo Id="QuotaAdjusted" Caption="حصة معدَّلة" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeAbsenceQuota_LookupListView" Caption="Employee Absence Quota">
+    <ListView Id="EmployeeAbsenceQuota_LookupListView" Caption="حصة الإجازات">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
         <ColumnInfo Id="AbsenceType" Caption="نوع الغياب" />
@@ -7074,7 +7105,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeAccomodation_DetailView" Caption="Employee Accomodation">
+    <DetailView Id="EmployeeAccomodation_DetailView" Caption="سكن الموظفين">
       <Items>
         <PropertyEditor Id="AccomodationType" Caption="نوع الإقامة" />
         <PropertyEditor Id="Bed" Caption="سرير" />
@@ -7082,7 +7113,7 @@
         <PropertyEditor Id="DeductionAmount" Caption="Deduction Amount" />
         <PropertyEditor Id="Employee" Caption="موظف" />
         <PropertyEditor Id="EndDate" Caption="تاريخ الانتهاء" />
-        <PropertyEditor Id="Flat" Caption="Flat" />
+        <PropertyEditor Id="Flat" Caption="شقه" />
         <PropertyEditor Id="Floor" Caption="أرضية" />
         <PropertyEditor Id="Location" Caption="الموقع" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -7093,12 +7124,12 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="EmployeeAccomodation" Caption="موظف السكن" />
+            <LayoutGroup Id="EmployeeAccomodation" Caption="سكن الموظفين" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="EmployeeAccomodation_ListView" Caption="Employee Accomodation">
+    <ListView Id="EmployeeAccomodation_ListView" Caption="سكن الموظفين">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -7110,12 +7141,12 @@
         <ColumnInfo Id="Location" Caption="الموقع" />
         <ColumnInfo Id="Building" Caption="مبنى" />
         <ColumnInfo Id="Floor" Caption="أرضية" />
-        <ColumnInfo Id="Flat" Caption="Flat" />
+        <ColumnInfo Id="Flat" Caption="شقه" />
         <ColumnInfo Id="Room" Caption="غرفة" />
         <ColumnInfo Id="Bed" Caption="سرير" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeAccomodation_LookupListView" Caption="Employee Accomodation">
+    <ListView Id="EmployeeAccomodation_LookupListView" Caption="سكن الموظفين">
       <Columns>
         <ColumnInfo Id="StartDate" Caption="تاريخ البدء" />
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
@@ -7125,14 +7156,14 @@
         <ColumnInfo Id="Location" Caption="الموقع" />
         <ColumnInfo Id="Building" Caption="مبنى" />
         <ColumnInfo Id="Floor" Caption="أرضية" />
-        <ColumnInfo Id="Flat" Caption="Flat" />
+        <ColumnInfo Id="Flat" Caption="شقه" />
         <ColumnInfo Id="Room" Caption="غرفة" />
         <ColumnInfo Id="Bed" Caption="سرير" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeAction_DetailView" Caption="Employee Action">
+    <DetailView Id="EmployeeAction_DetailView" Caption="موظف مبادرة">
       <Items>
         <PropertyEditor Id="ActionReason" Caption="سبب الإجراء" />
         <PropertyEditor Id="EndDate" Caption="تاريخ الانتهاء" />
@@ -7142,7 +7173,7 @@
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
     </DetailView>
-    <ListView Id="EmployeeAction_ListView" Caption="Employee Action">
+    <ListView Id="EmployeeAction_ListView" Caption="موظف مبادرة">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -7153,7 +7184,7 @@
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeAction_LookupListView" Caption="Employee Action">
+    <ListView Id="EmployeeAction_LookupListView" Caption="موظف مبادرة">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
         <ColumnInfo Id="PersonalAction" Caption="إجراء شخصي" />
@@ -7661,7 +7692,7 @@
     <DetailView Id="EmployeeDate_DetailView" Caption="تاريخ الموظف">
       <Items>
         <PropertyEditor Id="DateData" Caption="Date Data" />
-        <PropertyEditor Id="DateType" Caption="Date Type" />
+        <PropertyEditor Id="DateType" Caption="نوع تاريخ" />
         <PropertyEditor Id="DayData" Caption="Day Data" />
         <PropertyEditor Id="Employee" Caption="موظف" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -7673,7 +7704,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="DateType" Caption="Date Type" />
+        <ColumnInfo Id="DateType" Caption="نوع تاريخ" />
         <ColumnInfo Id="DateData" Caption="Date Data" />
         <ColumnInfo Id="DayData" Caption="Day Data" />
       </Columns>
@@ -7681,7 +7712,7 @@
     <ListView Id="EmployeeDate_LookupListView" Caption="تاريخ الموظف">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="DateType" Caption="Date Type" />
+        <ColumnInfo Id="DateType" Caption="نوع تاريخ" />
         <ColumnInfo Id="DateData" Caption="Date Data" />
         <ColumnInfo Id="DayData" Caption="Day Data" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
@@ -7725,7 +7756,7 @@
     <DetailView Id="EmployeeDependant_DetailView" Caption="التابع للموظف">
       <Items>
         <PropertyEditor Id="BirthDate" Caption="تاريخ الميلاد" />
-        <PropertyEditor Id="DependantType" Caption="نوع التابع" />
+        <PropertyEditor Id="DependantType" Caption="نوع عالة" />
         <PropertyEditor Id="Employee" Caption="موظف" />
         <PropertyEditor Id="Gender" Caption="جنس" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -7747,7 +7778,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="DependantType" Caption="نوع التابع" />
+        <ColumnInfo Id="DependantType" Caption="نوع عالة" />
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
         <ColumnInfo Id="BirthDate" Caption="تاريخ الميلاد" />
         <ColumnInfo Id="Gender" Caption="جنس" />
@@ -7792,7 +7823,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeDocument_DetailView" Caption="Employee Document">
+    <DetailView Id="EmployeeDocument_DetailView" Caption="مستند الموظف">
       <Items>
         <PropertyEditor Id="Attachment" Caption="المرفق" />
         <PropertyEditor Id="Comments" Caption="تعليقات" />
@@ -7818,7 +7849,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <DetailView Id="EmployeeDocument_DetailView_News" Caption="Employee Document">
+    <DetailView Id="EmployeeDocument_DetailView_News" Caption="مستند الموظف">
       <Items>
         <PropertyEditor Id="Attachment" Caption="المرفق" />
         <PropertyEditor Id="Comments" Caption="تعليقات" />
@@ -7839,7 +7870,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="EmployeeDocument_ListView" Caption="Employee Document">
+    <ListView Id="EmployeeDocument_ListView" Caption="مستند الموظف">
       <Columns>
         <ColumnInfo Id="DocAttachment" Caption="Doc Attachment" />
         <ColumnInfo Id="DocumentHtml" Caption="Document Html" />
@@ -7855,7 +7886,7 @@
         <ColumnInfo Id="Description" Caption="وصف" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeDocument_LookupListView" Caption="Employee Document">
+    <ListView Id="EmployeeDocument_LookupListView" Caption="مستند الموظف">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="DocumentHtml" Caption="Document Html" />
@@ -7872,7 +7903,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeDutyPeriod_DetailView" Caption="فترة عمل الموظف">
+    <DetailView Id="EmployeeDutyPeriod_DetailView">
       <Items>
         <PropertyEditor Id="DutyPeriod" Caption="فترة العمل" />
         <PropertyEditor Id="Employee" Caption="موظف" />
@@ -8023,7 +8054,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeFnFPayment_DetailView" Caption="Employee Fn FPayment">
+    <DetailView Id="EmployeeFnFPayment_DetailView" Caption="الموظف الكامل والدفع النهائي">
       <Items>
         <PropertyEditor Id="Comments" Caption="تعليقات" />
         <PropertyEditor Id="CompensateLoanAmount" Caption="تعويض مبلغ القرض" />
@@ -8071,7 +8102,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="EmployeeFnFPayment_ListView" Caption="Employee Fn FPayment">
+    <ListView Id="EmployeeFnFPayment_ListView" Caption="الموظف الكامل والدفع النهائي">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
@@ -8100,7 +8131,7 @@
         <ColumnInfo Id="CompensateLoanAmount" Caption="تعويض مبلغ القرض" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeFnFPayment_LookupListView" Caption="Employee Fn FPayment">
+    <ListView Id="EmployeeFnFPayment_LookupListView" Caption="الموظف الكامل والدفع النهائي">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Employee" Caption="موظف" />
@@ -8130,7 +8161,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeGratuity_DetailView" Caption="Employee Gratuity">
+    <DetailView Id="EmployeeGratuity_DetailView" Caption="مكافأة الموظف">
       <Items>
         <PropertyEditor Id="Comments" Caption="تعليقات" />
         <PropertyEditor Id="Employee" Caption="موظف" />
@@ -8145,7 +8176,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="EmployeeGratuity_ListView" Caption="Employee Gratuity">
+    <ListView Id="EmployeeGratuity_ListView" Caption="مكافأة الموظف">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
@@ -8155,7 +8186,7 @@
         <ColumnInfo Id="GratuityPaidDays" Caption="Gratuity Paid Days" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeGratuity_LookupListView" Caption="Employee Gratuity">
+    <ListView Id="EmployeeGratuity_LookupListView" Caption="مكافأة الموظف">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Employee" Caption="موظف" />
@@ -8248,7 +8279,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeGroup_DetailView" Caption="Salary Profile">
+    <DetailView Id="EmployeeGroup_DetailView" Caption="الملف الراتب">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="DaysPerMonth" Caption="Days Per Month" />
@@ -8277,10 +8308,10 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <ColumnInfo Id="Code" Caption="رمز" />
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
-        <ColumnInfo Id="TicketClass" Caption="Ticket Class" />
+        <ColumnInfo Id="TicketClass" Caption="درجة التذكرة" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeGroup_ListView" Caption="Salary Profile">
+    <ListView Id="EmployeeGroup_ListView" Caption="الملف الراتب">
       <Columns>
         <ColumnInfo Id="DaysPerMonth" Caption="Days Per Month" />
         <ColumnInfo Id="GratuityDeductPaidDays" Caption="الأيام المدفوعة لخصم المكافآت" />
@@ -8295,18 +8326,23 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeGroup_LookupListView" Caption="Salary Profile">
+    <ListView Id="EmployeeGroup_LookupListView" Caption="الملف الراتب">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
+    <DashboardView Id="EmployeeIncentive" Caption="حافز الموظف">
+      <Items>
+        <CustomUserControlViewItemWeb Id="EmployeeIncentive" Caption="حافز الموظف" />
+      </Items>
+    </DashboardView>
     <DetailView Id="EmployeeLoan_DetailView" Caption="قرض الموظف">
       <Items>
         <PropertyEditor Id="Comments" Caption="تعليقات" />
         <PropertyEditor Id="DueAmount" Caption="المبلغ المستحق" />
         <PropertyEditor Id="Employee" Caption="موظف" />
         <PropertyEditor Id="EndDate" Caption="تاريخ الانتهاء" />
-        <PropertyEditor Id="LoanType" Caption="Loan Type" />
+        <PropertyEditor Id="LoanType" Caption="نوع القرض" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="StartDate" Caption="تاريخ البدء" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
@@ -8326,7 +8362,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="LoanType" Caption="Loan Type" />
+        <ColumnInfo Id="LoanType" Caption="نوع القرض" />
         <ColumnInfo Id="StartDate" Caption="تاريخ البدء" />
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
         <ColumnInfo Id="DueAmount" Caption="المبلغ المستحق" />
@@ -8336,7 +8372,7 @@
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="LoanType" Caption="Loan Type" />
+        <ColumnInfo Id="LoanType" Caption="نوع القرض" />
         <ColumnInfo Id="StartDate" Caption="تاريخ البدء" />
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
         <ColumnInfo Id="DueAmount" Caption="المبلغ المستحق" />
@@ -8991,7 +9027,7 @@
         <PropertyEditor Id="Payment" Caption="سداد" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
         <PropertyEditor Id="Ticket" Caption="تذكرة" />
-        <PropertyEditor Id="TicketClass" Caption="Ticket Class" />
+        <PropertyEditor Id="TicketClass" Caption="درجة التذكرة" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main">
@@ -9035,7 +9071,7 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <ColumnInfo Id="Code" Caption="رمز" />
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
-        <ColumnInfo Id="TicketClass" Caption="Ticket Class" />
+        <ColumnInfo Id="TicketClass" Caption="درجة التذكرة" />
         <ColumnInfo Id="EmployeeGroup" Caption="مجموعة الموظفين" />
       </Columns>
     </ListView>
@@ -9487,7 +9523,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeTimesheet_DetailView" Caption="Employee Timesheet">
+    <DetailView Id="EmployeeTimesheet_DetailView" Caption="وقت الموظف التفاصيل">
       <Items>
         <PropertyEditor Id="Approved" Caption="Approved" />
         <PropertyEditor Id="Comments" Caption="تعليقات" />
@@ -9505,7 +9541,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="EmployeeTimesheet_ListView" Caption="Employee Timesheet">
+    <ListView Id="EmployeeTimesheet_ListView" Caption="وقت الموظف التفاصيل">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -9514,7 +9550,7 @@
         <ColumnInfo Id="Comments" Caption="تعليقات" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeeTimesheet_LookupListView" Caption="Employee Timesheet">
+    <ListView Id="EmployeeTimesheet_LookupListView" Caption="وقت الموظف التفاصيل">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Employee" Caption="موظف" />
@@ -9581,7 +9617,7 @@
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
         <PropertyEditor Id="TrainingDate" Caption="Training Date" />
-        <PropertyEditor Id="TrainingType" Caption="Training Type" />
+        <PropertyEditor Id="TrainingType" Caption="نوع التدريب" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main">
@@ -9594,7 +9630,7 @@
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
-        <ColumnInfo Id="TrainingType" Caption="Training Type" />
+        <ColumnInfo Id="TrainingType" Caption="نوع التدريب" />
         <ColumnInfo Id="TrainingDate" Caption="Training Date" />
       </Columns>
     </ListView>
@@ -9602,7 +9638,7 @@
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="TrainingType" Caption="Training Type" />
+        <ColumnInfo Id="TrainingType" Caption="نوع التدريب" />
         <ColumnInfo Id="TrainingDate" Caption="Training Date" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -9737,6 +9773,11 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
+    <DashboardView Id="EmpNonResumption" Caption="+++++">
+      <Items>
+        <CustomUserControlViewItemWeb Id="EmpNonResumption" Caption="موظف غير استرداد" />
+      </Items>
+    </DashboardView>
     <DetailView Id="EmpPerformanceHistory_DetailView" Caption="Emp Performance History">
       <Items>
         <PropertyEditor Id="Description" Caption="وصف" />
@@ -9835,6 +9876,11 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
+    <DashboardView Id="EmpResumption" Caption="استئناف الموظف">
+      <Items>
+        <CustomUserControlViewItemWeb Id="EmpResumption" Caption="استئناف الموظف" />
+      </Items>
+    </DashboardView>
     <DetailView Id="EmpTalentMatrixData_DetailView" Caption="Emp Talent Matrix Data">
       <Items>
         <PropertyEditor Id="CalibratedRating" Caption="Calibrated Rating" />
@@ -9943,7 +9989,7 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DetailView Id="Flat_DetailView" Caption="Flat">
+    <DetailView Id="Flat_DetailView" Caption="شقه">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Floor" Caption="أرضية" />
@@ -9960,7 +10006,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="Flat_ListView" Caption="Flat">
+    <ListView Id="Flat_ListView" Caption="شقه">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -9970,7 +10016,7 @@
         <ColumnInfo Id="Floor" Caption="أرضية" />
       </Columns>
     </ListView>
-    <ListView Id="Flat_LookupListView" Caption="Flat">
+    <ListView Id="Flat_LookupListView" Caption="شقه">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -10226,6 +10272,9 @@
       </Items>
       <Layout>
         <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="HolidayCalendar" Caption="عطلة التقويم" />
+          </LayoutGroup>
           <LayoutGroup Id="Holiday_Group" Caption="عطلة" />
         </LayoutGroup>
       </Layout>
@@ -10910,7 +10959,7 @@
         <ColumnInfo Id="Name" Caption="اسم" />
       </Columns>
     </ListView>
-    <DetailView Id="LanguageInfo_DetailView" Caption="Language Info">
+    <DetailView Id="LanguageInfo_DetailView" Caption="معلومات اللغة">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -10918,8 +10967,15 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="LanguageInfo" Caption="معلومات اللغة" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="LanguageInfo_ListView" Caption="Language Info">
+    <ListView Id="LanguageInfo_ListView" Caption="معلومات اللغة">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -10928,7 +10984,7 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="LanguageInfo_LookupListView" Caption="Language Info">
+    <ListView Id="LanguageInfo_LookupListView" Caption="معلومات اللغة">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -11007,7 +11063,7 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="LeaveAmendmentRequest" Caption="طلب تغيير الإجازة" />
+            <LayoutGroup Id="LeaveAmendmentRequest" Caption="طلب تعديل الإجازة" />
             <TabbedGroup Id="Item1">
               <LayoutGroup Id="WorkflowRequest" Caption="طلب سير العمل" />
               <LayoutGroup Id="Item2" Caption="ملاحظات سير العمل" />
@@ -11047,7 +11103,8 @@
         <ColumnInfo Id="EmployeeName" Caption="اسم الموظف" />
       </Columns>
     </ListView>
-    <DetailView Id="LeaveCancellationRequest_DetailView" Caption="Leave Cancellation Request">
+    <DashboardView Id="LeaveByDept" Caption="الغياب سجل من قبل الإدارات" />
+    <DetailView Id="LeaveCancellationRequest_DetailView" Caption="إلغاء طلب إجازة">
       <Items>
         <PropertyEditor Id="Employee" Caption="موظف" />
         <PropertyEditor Id="AbsenceType" Caption="نوع الغياب" />
@@ -11080,7 +11137,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="LeaveCancellationRequest_ListView" Caption="Leave Cancellation Request">
+    <ListView Id="LeaveCancellationRequest_ListView" Caption="إلغاء طلب إجازة">
       <Columns>
         <ColumnInfo Id="ApprovalProcessTime" Caption="وقت عملية الموافقة" />
         <ColumnInfo Id="Employee" Caption="موظف" />
@@ -11098,15 +11155,21 @@
         <ColumnInfo Id="QuotaUsed" Caption="الحصة المستهلكة" />
       </Columns>
     </ListView>
-    <ListView Id="LeaveCancellationRequest_LookupListView" Caption="Leave Cancellation Request">
+    <ListView Id="LeaveCancellationRequest_LookupListView" Caption="إلغاء طلب إجازة">
       <Columns>
         <ColumnInfo Id="EmployeeName" Caption="اسم الموظف" />
       </Columns>
     </ListView>
+    <DashboardView Id="LeavePlanner" Caption="إجازة مخطط">
+      <Items>
+        <CustomUserControlViewItemWeb Id="LeavePlanner" Caption="إجازة مخطط" />
+      </Items>
+    </DashboardView>
     <DetailView Id="LeavePlanner_DetailView">
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="LeavePlanner" Caption="إجازة مخطط" />
             <TabbedGroup Id="Item2">
               <LayoutGroup Id="WorkflowRequest" Caption="طلب سير العمل" />
               <LayoutGroup Id="Item3" Caption="ملاحظات سير العمل" />
@@ -11221,7 +11284,7 @@
         <CustomUserControlViewItemWeb Id="LoanByDept" Caption="القرض حسب القسم" />
       </Items>
     </DashboardView>
-    <DetailView Id="LoanType_DetailView" Caption="Loan Type">
+    <DetailView Id="LoanType_DetailView" Caption="نوع القرض">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -11237,7 +11300,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="LoanType_ListView" Caption="Loan Type">
+    <ListView Id="LoanType_ListView" Caption="نوع القرض">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -11246,7 +11309,7 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="LoanType_LookupListView" Caption="Loan Type">
+    <ListView Id="LoanType_LookupListView" Caption="نوع القرض">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -11290,6 +11353,13 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="MaritalStatus" Caption="الحالة الاجتماعية" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
     <ListView Id="MaritalStatus_ListView" Caption="الحالة الاجتماعية">
       <Columns>
@@ -11469,7 +11539,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="MonthlyTimeRegister" Caption="سجل الوقت الشهري" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
       </Columns>
     </ListView>
@@ -11477,7 +11547,7 @@
       <Items>
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
-        <PropertyEditor Id="TimeType" Caption="نوع الوقت" />
+        <PropertyEditor Id="TimeType" Caption="نوع مرة" />
         <PropertyEditor Id="TimeValue" Caption="Time Value" />
       </Items>
     </DetailView>
@@ -11486,14 +11556,14 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="MonthlyTimeRegister" Caption="سجل الوقت الشهري" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
       </Columns>
     </ListView>
     <ListView Id="MonthlyTimeRegisterDetail_LookupListView" Caption="تفاصيل سجل الوقت الشهري">
       <Columns>
         <ColumnInfo Id="MonthlyTimeRegister" Caption="سجل الوقت الشهري" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -11518,7 +11588,7 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="Nationality" Caption="جنسية" />
+            <LayoutGroup Id="Nationality" Caption="الجنسية" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
@@ -11687,7 +11757,7 @@
         <ColumnInfo Id="Subject" Caption="موضوع" />
       </Columns>
     </ListView>
-    <DetailView Id="NumberSeries_DetailView" Caption="رقم السلسلة">
+    <DetailView Id="NumberSeries_DetailView" Caption="سلسلة الأرقام">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Formatting" Caption="تنسيق" />
@@ -11703,7 +11773,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="NumberSeries_ListView" Caption="رقم السلسلة">
+    <ListView Id="NumberSeries_ListView" Caption="سلسلة الأرقام">
       <Columns>
         <ColumnInfo Id="Name" Caption="اسم" />
         <ColumnInfo Id="Code" Caption="رمز" />
@@ -11712,12 +11782,21 @@
         <ColumnInfo Id="Formatting" Caption="تنسيق" />
       </Columns>
     </ListView>
-    <ListView Id="NumberSeries_LookupListView" Caption="رقم السلسلة">
+    <ListView Id="NumberSeries_LookupListView" Caption="سلسلة الأرقام">
       <Columns>
         <ColumnInfo Id="Name" Caption="اسم" />
       </Columns>
     </ListView>
-    <DetailView Id="OrganizationDocument_DetailView" Caption="Organization Document">
+    <DetailView Id="OrganizationBankInfo_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="OrganizationBankInfo" Caption="معلومات بنك المؤسسة" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="OrganizationDocument_DetailView" Caption="المستند الشركة">
       <Items>
         <PropertyEditor Id="Attachment" Caption="مرفق" />
         <PropertyEditor Id="Comments" Caption="تعليقات" />
@@ -11740,7 +11819,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="OrganizationDocument_ListView" Caption="Organization Document">
+    <ListView Id="OrganizationDocument_ListView" Caption="المستند الشركة">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="DocAttachment" Caption="Doc Attachment" />
@@ -11754,7 +11833,7 @@
         <ColumnInfo Id="DocumentPlace" Caption="مكان المستند" />
       </Columns>
     </ListView>
-    <ListView Id="OrganizationDocument_LookupListView" Caption="Organization Document">
+    <ListView Id="OrganizationDocument_LookupListView" Caption="المستند الشركة">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="OrganizationUnit" Caption="وحدة المؤسسة" />
@@ -11791,7 +11870,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="OrganizationUnit_Document_ListView" Caption="Organization Document">
+    <ListView Id="OrganizationUnit_Document_ListView" Caption="المستند الشركة">
       <Columns>
         <ColumnInfo Id="Comments" Caption="تعليقات" />
         <ColumnInfo Id="DocAttachment" Caption="Doc Attachment" />
@@ -11809,12 +11888,12 @@
       <Columns>
         <ColumnInfo Id="Address" Caption="عنوان" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
+        <ColumnInfo Id="OrgUnitType" Caption="Org Unit Type" />
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <ColumnInfo Id="Code" Caption="رمز" />
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
-        <ColumnInfo Id="OrgUnitType" Caption="Org Unit Type" />
-        <ColumnInfo Id="PayrollArea" Caption="منطقة كشف الرواتب" />
         <ColumnInfo Id="ParentOrgUnit" Caption="Parent Org Unit" />
+        <ColumnInfo Id="PayrollArea" Caption="منطقة كشف الرواتب" />
         <ColumnInfo Id="Logo" Caption="شعار" />
       </Columns>
     </ListView>
@@ -11823,7 +11902,7 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DetailView Id="OvertimeType_DetailView" Caption="Overtime Type">
+    <DetailView Id="OvertimeType_DetailView" Caption="نوع العمل الإضافي">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -11832,8 +11911,15 @@
         <PropertyEditor Id="OvertimeRate" Caption="Overtime Rate" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="OvertimeType" Caption="نوع العمل الإضافي" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="OvertimeType_ListView" Caption="Overtime Type">
+    <ListView Id="OvertimeType_ListView" Caption="نوع العمل الإضافي">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -11843,7 +11929,7 @@
         <ColumnInfo Id="OvertimeRate" Caption="Overtime Rate" />
       </Columns>
     </ListView>
-    <ListView Id="OvertimeType_LookupListView" Caption="Overtime Type">
+    <ListView Id="OvertimeType_LookupListView" Caption="نوع العمل الإضافي">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -12107,7 +12193,7 @@
         <PropertyEditor Id="CutOffDay" Caption="استقطاع يوم الغياب" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="Name" Caption="اسم" />
-        <PropertyEditor Id="PayrollPeriod" Caption="Payroll Period" />
+        <PropertyEditor Id="PayrollPeriod" Caption="رواتب المدة" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
       <Layout>
@@ -12124,7 +12210,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Name" Caption="اسم" />
         <ColumnInfo Id="Code" Caption="رمز" />
-        <ColumnInfo Id="PayrollPeriod" Caption="Payroll Period" />
+        <ColumnInfo Id="PayrollPeriod" Caption="رواتب المدة" />
         <ColumnInfo Id="Currency" Caption="العملة" />
         <ColumnInfo Id="CutOffDay" Caption="استقطاع يوم الغياب" />
       </Columns>
@@ -12134,7 +12220,7 @@
         <ColumnInfo Id="Name" Caption="اسم" />
       </Columns>
     </ListView>
-    <DetailView Id="PayrollCalendar_DetailView" Caption="تقويم كشف الرواتب">
+    <DetailView Id="PayrollCalendar_DetailView" Caption="تقويم كشوف المرتبات">
       <Items>
         <PropertyEditor Id="EndDate" Caption="تاريخ الانتهاء" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -12147,12 +12233,12 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="PayrollCalendar" Caption="تقويم الرواتب" />
+            <LayoutGroup Id="PayrollCalendar" Caption="تقويم كشوف المرتبات" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="PayrollCalendar_ListView" Caption="تقويم كشف الرواتب">
+    <ListView Id="PayrollCalendar_ListView" Caption="تقويم كشوف المرتبات">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -12163,7 +12249,7 @@
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
       </Columns>
     </ListView>
-    <ListView Id="PayrollCalendar_LookupListView" Caption="تقويم كشف الرواتب">
+    <ListView Id="PayrollCalendar_LookupListView" Caption="تقويم كشوف المرتبات">
       <Columns>
         <ColumnInfo Id="PayrollArea" Caption="منطقة كشف الرواتب" />
         <ColumnInfo Id="PayrollMonth" Caption="شهر كشف الرواتب" />
@@ -12263,7 +12349,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="PayrollPeriod_DetailView" Caption="Payroll Period">
+    <DetailView Id="PayrollPeriod_DetailView" Caption="رواتب المدة">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -12271,8 +12357,15 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PayrollPeriod" Caption="رواتب المدة" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="PayrollPeriod_ListView" Caption="Payroll Period">
+    <ListView Id="PayrollPeriod_ListView" Caption="رواتب المدة">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -12281,7 +12374,7 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="PayrollPeriod_LookupListView" Caption="Payroll Period">
+    <ListView Id="PayrollPeriod_LookupListView" Caption="رواتب المدة">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -12445,7 +12538,7 @@
         <ColumnInfo Id="Telephone" Caption="الهاتف" />
         <ColumnInfo Id="ThirdNameAr" Caption="الاسم الثالث بالعربية" />
         <ColumnInfo Id="ThirdNameEn" Caption="الاسم الثالث الإنجليزية" />
-        <ColumnInfo Id="Title" Caption="عنوان" />
+        <ColumnInfo Id="Title" Caption="لقب" />
         <ColumnInfo Id="ZipCode" Caption="الرمز البريدي" />
         <ColumnInfo Id="Code" Caption="رمز" />
         <ColumnInfo Id="FullNameEn" Caption="الاسم الكامل إنجليزي" />
@@ -12871,7 +12964,7 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="Religion" Caption="دين" />
+            <LayoutGroup Id="Religion" Caption="ديانة" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
@@ -13133,7 +13226,7 @@
     <DetailView Id="Room_DetailView" Caption="غرفة">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
-        <PropertyEditor Id="Flat" Caption="Flat" />
+        <PropertyEditor Id="Flat" Caption="شقه" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="NameAr" Caption="الاسم باللغة العربية" />
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
@@ -13154,7 +13247,7 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <ColumnInfo Id="Code" Caption="رمز" />
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
-        <ColumnInfo Id="Flat" Caption="Flat" />
+        <ColumnInfo Id="Flat" Caption="شقه" />
       </Columns>
     </ListView>
     <ListView Id="Room_LookupListView" Caption="غرفة">
@@ -13165,7 +13258,7 @@
     <DetailView Id="RosterDailyDuty_DetailView" Caption="Roster Daily Duty">
       <Items>
         <PropertyEditor Id="CalendarDate" Caption="Calendar Date" />
-        <PropertyEditor Id="DailyDuty" Caption="Daily Duty" />
+        <PropertyEditor Id="DailyDuty" Caption="العمل اليومي" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="RosterDutySchedule" Caption="جدول ورديات العمل" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
@@ -13177,14 +13270,14 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="CalendarDate" Caption="Calendar Date" />
         <ColumnInfo Id="RosterDutySchedule" Caption="جدول ورديات العمل" />
-        <ColumnInfo Id="DailyDuty" Caption="Daily Duty" />
+        <ColumnInfo Id="DailyDuty" Caption="العمل اليومي" />
       </Columns>
     </ListView>
     <ListView Id="RosterDailyDuty_LookupListView" Caption="Roster Daily Duty">
       <Columns>
         <ColumnInfo Id="CalendarDate" Caption="Calendar Date" />
         <ColumnInfo Id="RosterDutySchedule" Caption="جدول ورديات العمل" />
-        <ColumnInfo Id="DailyDuty" Caption="Daily Duty" />
+        <ColumnInfo Id="DailyDuty" Caption="العمل اليومي" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
@@ -13789,7 +13882,8 @@
         <ColumnInfo Id="Name" Caption="اسم" />
       </Columns>
     </ListView>
-    <DetailView Id="SalaryRegister_DetailView" Caption="Salary Register">
+    <DashboardView Id="SalaryRegister" Caption="سجلات الرواتب" />
+    <DetailView Id="SalaryRegister_DetailView" Caption="سجلات الرواتب">
       <Items>
         <PropertyEditor Id="Employee" Caption="موظف" />
         <PropertyEditor Id="ForPeriod" Caption="للمدة" />
@@ -13797,19 +13891,19 @@
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="PayrollResultType" Caption="نوع نتيجة كشف الرواتب" />
         <PropertyEditor Id="PayrollRunType" Caption="نوع تشغيل كشف الرواتب" />
-        <PropertyEditor Id="SalaryRegisterDetail" Caption="تفاصيل سجل الرواتب" />
+        <PropertyEditor Id="SalaryRegisterDetail" Caption="سجلات الرواتب التفاصيل" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="SalaryRegister" Caption="تسجيل الراتب" />
+            <LayoutGroup Id="SalaryRegister" Caption="سجلات الرواتب" />
           </LayoutGroup>
-          <LayoutGroup Id="SalaryRegisterDetail_Group" Caption="تفاصيل تسجيل الراتب" />
+          <LayoutGroup Id="SalaryRegisterDetail_Group" Caption="سجلات الرواتب التفاصيل" />
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="SalaryRegister_ListView" Caption="Salary Register">
+    <ListView Id="SalaryRegister_ListView" Caption="سجلات الرواتب">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -13819,7 +13913,7 @@
         <ColumnInfo Id="PayrollResultType" Caption="نوع نتيجة كشف الرواتب" />
       </Columns>
     </ListView>
-    <ListView Id="SalaryRegister_LookupListView" Caption="Salary Register">
+    <ListView Id="SalaryRegister_LookupListView" Caption="سجلات الرواتب">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
         <ColumnInfo Id="ForPeriod" Caption="للمدة" />
@@ -13830,10 +13924,10 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <ListView Id="SalaryRegister_SalaryRegisterDetail_ListView" Caption="تفاصيل سجل الرواتب">
+    <ListView Id="SalaryRegister_SalaryRegisterDetail_ListView" Caption="سجلات الرواتب التفاصيل">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
-        <ColumnInfo Id="SalaryRegister" Caption="Salary Register" />
+        <ColumnInfo Id="SalaryRegister" Caption="سجلات الرواتب" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="WageType" Caption="نوع الأجر" />
         <ColumnInfo Id="Rate" Caption="معدل" />
@@ -13841,7 +13935,7 @@
         <ColumnInfo Id="Amount" Caption="كمية" />
       </Columns>
     </ListView>
-    <DetailView Id="SalaryRegisterDetail_DetailView" Caption="تفاصيل سجل الرواتب">
+    <DetailView Id="SalaryRegisterDetail_DetailView" Caption="سجلات الرواتب التفاصيل">
       <Items>
         <PropertyEditor Id="Amount" Caption="كمية" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -13851,20 +13945,20 @@
         <PropertyEditor Id="WageType" Caption="نوع الأجر" />
       </Items>
     </DetailView>
-    <ListView Id="SalaryRegisterDetail_ListView" Caption="تفاصيل سجل الرواتب">
+    <ListView Id="SalaryRegisterDetail_ListView" Caption="سجلات الرواتب التفاصيل">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
-        <ColumnInfo Id="SalaryRegister" Caption="Salary Register" />
+        <ColumnInfo Id="SalaryRegister" Caption="سجلات الرواتب" />
         <ColumnInfo Id="WageType" Caption="نوع الأجر" />
         <ColumnInfo Id="Rate" Caption="معدل" />
         <ColumnInfo Id="Number" Caption="رقم" />
         <ColumnInfo Id="Amount" Caption="كمية" />
       </Columns>
     </ListView>
-    <ListView Id="SalaryRegisterDetail_LookupListView" Caption="تفاصيل سجل الرواتب">
+    <ListView Id="SalaryRegisterDetail_LookupListView" Caption="سجلات الرواتب التفاصيل">
       <Columns>
-        <ColumnInfo Id="SalaryRegister" Caption="Salary Register" />
+        <ColumnInfo Id="SalaryRegister" Caption="سجلات الرواتب" />
         <ColumnInfo Id="WageType" Caption="نوع الأجر" />
         <ColumnInfo Id="Rate" Caption="معدل" />
         <ColumnInfo Id="Number" Caption="رقم" />
@@ -13873,7 +13967,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="SimulationSalaryRegister_DetailView" Caption="سجل راتب الحافز">
+    <DetailView Id="SimulationSalaryRegister_DetailView" Caption="سجل راتب المحاكاة">
       <Items>
         <PropertyEditor Id="Employee" Caption="موظف" />
         <PropertyEditor Id="ForPeriod" Caption="للمدة" />
@@ -13887,13 +13981,13 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="SimulationSalaryRegister" Caption="محاكاة تسجيل الراتب" />
+            <LayoutGroup Id="SimulationSalaryRegister" Caption="سجل راتب المحاكاة" />
           </LayoutGroup>
           <LayoutGroup Id="SimuSalaryRegisterDetail_Group" Caption="تفاصيل محاكاة تسجيل الراتب" />
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="SimulationSalaryRegister_ListView" Caption="سجل راتب الحافز">
+    <ListView Id="SimulationSalaryRegister_ListView" Caption="سجل راتب المحاكاة">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -13904,7 +13998,7 @@
         <ColumnInfo Id="PayrollResultType" Caption="نوع نتيجة كشف الرواتب" />
       </Columns>
     </ListView>
-    <ListView Id="SimulationSalaryRegister_LookupListView" Caption="سجل راتب الحافز">
+    <ListView Id="SimulationSalaryRegister_LookupListView" Caption="سجل راتب المحاكاة">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
         <ColumnInfo Id="ForPeriod" Caption="للمدة" />
@@ -13995,7 +14089,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SimuTimeRegister" Caption="Simu Time Register" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
       </Columns>
     </ListView>
@@ -14003,7 +14097,7 @@
       <Items>
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
-        <PropertyEditor Id="TimeType" Caption="نوع الوقت" />
+        <PropertyEditor Id="TimeType" Caption="نوع مرة" />
         <PropertyEditor Id="TimeValue" Caption="Time Value" />
       </Items>
     </DetailView>
@@ -14012,14 +14106,14 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="SimuTimeRegister" Caption="Simu Time Register" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
       </Columns>
     </ListView>
     <ListView Id="SimulationTimeRegisterDetail_LookupListView" Caption="تفاصيل سجل وقت الحافز">
       <Columns>
         <ColumnInfo Id="SimuTimeRegister" Caption="Simu Time Register" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -14101,7 +14195,7 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="Sponsor" Caption="كفيل" />
+            <LayoutGroup Id="Sponsor" Caption="الجهة الراعية" />
           </LayoutGroup>
           <LayoutGroup Id="GovtJobTitle_Group" Caption="وظيفة حكومية" />
         </LayoutGroup>
@@ -14149,7 +14243,7 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DetailView Id="SponsorBank_DetailView" Caption="Sponsor Bank">
+    <DetailView Id="SponsorBank_DetailView" Caption="البنك الراعي">
       <Items>
         <PropertyEditor Id="AccountNumber" Caption="رقم الحساب" />
         <PropertyEditor Id="EmployeeBank" Caption="بنك الموظف" />
@@ -14163,12 +14257,12 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="SponsorBank" Caption="اسم بنك كفيل " />
+            <LayoutGroup Id="SponsorBank" Caption="البنك الراعي" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="SponsorBank_ListView" Caption="Sponsor Bank">
+    <ListView Id="SponsorBank_ListView" Caption="البنك الراعي">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -14180,7 +14274,7 @@
         <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
       </Columns>
     </ListView>
-    <ListView Id="SponsorBank_LookupListView" Caption="Sponsor Bank">
+    <ListView Id="SponsorBank_LookupListView" Caption="البنك الراعي">
       <Columns>
         <ColumnInfo Id="Sponsor" Caption="الجهة الراعية" />
         <ColumnInfo Id="EmployeeBank" Caption="بنك الموظف" />
@@ -14234,6 +14328,11 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
+    <DashboardView Id="StaffOvertime" Caption="الموظف العمل الإضافي">
+      <Items>
+        <CustomUserControlViewItemWeb Id="StaffOvertime" Caption="الموظف العمل الإضافي" />
+      </Items>
+    </DashboardView>
     <DetailView Id="State_DetailView" Caption="دولة">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
@@ -14551,7 +14650,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="TicketClass_DetailView" Caption="Ticket Class">
+    <DetailView Id="TicketClass_DetailView" Caption="درجة التذكرة">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -14559,8 +14658,15 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="TicketClass" Caption="درجة التذكرة" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="TicketClass_ListView" Caption="Ticket Class">
+    <ListView Id="TicketClass_ListView" Caption="درجة التذكرة">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -14569,7 +14675,7 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="TicketClass_LookupListView" Caption="Ticket Class">
+    <ListView Id="TicketClass_LookupListView" Caption="درجة التذكرة">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -14581,13 +14687,13 @@
         <PropertyEditor Id="PaxType" Caption="Pax Type" />
         <PropertyEditor Id="ReturnTicketFare" Caption="Return Ticket Fare" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
-        <PropertyEditor Id="TicketClass" Caption="Ticket Class" />
+        <PropertyEditor Id="TicketClass" Caption="درجة التذكرة" />
         <PropertyEditor Id="TicketRoute" Caption="مسار التذكرة" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="TicketFare" Caption="أجرة تذكرة" />
+            <LayoutGroup Id="TicketFare" Caption="قيمة التذكرة" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
@@ -14598,7 +14704,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="TicketRoute" Caption="مسار التذكرة" />
         <ColumnInfo Id="PaxType" Caption="Pax Type" />
-        <ColumnInfo Id="TicketClass" Caption="Ticket Class" />
+        <ColumnInfo Id="TicketClass" Caption="درجة التذكرة" />
         <ColumnInfo Id="OneWayTicketFare" Caption="One Way Ticket Fare" />
         <ColumnInfo Id="ReturnTicketFare" Caption="Return Ticket Fare" />
       </Columns>
@@ -14607,7 +14713,7 @@
       <Columns>
         <ColumnInfo Id="TicketRoute" Caption="مسار التذكرة" />
         <ColumnInfo Id="PaxType" Caption="Pax Type" />
-        <ColumnInfo Id="TicketClass" Caption="Ticket Class" />
+        <ColumnInfo Id="TicketClass" Caption="درجة التذكرة" />
         <ColumnInfo Id="OneWayTicketFare" Caption="One Way Ticket Fare" />
         <ColumnInfo Id="ReturnTicketFare" Caption="Return Ticket Fare" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
@@ -14622,6 +14728,13 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="TicketRoute" Caption="مسار التذكرة" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
     <ListView Id="TicketRoute_ListView" Caption="مسار التذكرة">
       <Columns>
@@ -14653,7 +14766,7 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="TicketType" Caption="نوع تذكرة" />
+            <LayoutGroup Id="TicketType" Caption="نوع التذكرة" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
@@ -14678,7 +14791,7 @@
       </Columns>
     </ListView>
     <DashboardView Id="TimeEngine" Caption="محرك الوقت" />
-    <DetailView Id="TimeEvent_DetailView" Caption="Time Event">
+    <DetailView Id="TimeEvent_DetailView" Caption="وقت الحدث">
       <Items>
         <PropertyEditor Id="AccessUnit" Caption="وحدة الوصول" />
         <PropertyEditor Id="ActualTransType" Caption="Actual Trans Type" />
@@ -14690,7 +14803,7 @@
         <PropertyEditor Id="TransDate" Caption="Trans Date" />
         <PropertyEditor Id="TransSource" Caption="Trans Source" />
         <PropertyEditor Id="TransTime" Caption="Trans Time" />
-        <PropertyEditor Id="TransType" Caption="Trans Type" />
+        <PropertyEditor Id="TransType" Caption="نوع من نقل" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main">
@@ -14700,13 +14813,13 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="TimeEvent_ListView" Caption="Time Event">
+    <ListView Id="TimeEvent_ListView" Caption="وقت الحدث">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="PIN" Caption="PIN" />
         <ColumnInfo Id="ActualTransType" Caption="Actual Trans Type" />
-        <ColumnInfo Id="TransType" Caption="Trans Type" />
+        <ColumnInfo Id="TransType" Caption="نوع من نقل" />
         <ColumnInfo Id="TransDate" Caption="Trans Date" />
         <ColumnInfo Id="TransTime" Caption="Trans Time" />
         <ColumnInfo Id="AccessUnit" Caption="وحدة الوصول" />
@@ -14714,12 +14827,12 @@
         <ColumnInfo Id="TransSource" Caption="Trans Source" />
       </Columns>
     </ListView>
-    <ListView Id="TimeEvent_LookupListView" Caption="Time Event">
+    <ListView Id="TimeEvent_LookupListView" Caption="وقت الحدث">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
         <ColumnInfo Id="PIN" Caption="PIN" />
         <ColumnInfo Id="ActualTransType" Caption="Actual Trans Type" />
-        <ColumnInfo Id="TransType" Caption="Trans Type" />
+        <ColumnInfo Id="TransType" Caption="نوع من نقل" />
         <ColumnInfo Id="TransDate" Caption="Trans Date" />
         <ColumnInfo Id="TransTime" Caption="Trans Time" />
         <ColumnInfo Id="AccessUnit" Caption="وحدة الوصول" />
@@ -14878,7 +14991,7 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DetailView Id="TimeRegister_DetailView" Caption="Time Register">
+    <DetailView Id="TimeRegister_DetailView" Caption="سجلات الوقت">
       <Items>
         <PropertyEditor Id="AbsentDay" Caption="يوم الغياب" />
         <PropertyEditor Id="ActiveDay" Caption="يوم العمل" />
@@ -14916,12 +15029,12 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="TimeRegister" Caption="وقت التسجيل" />
+            <LayoutGroup Id="TimeRegister" Caption="سجلات الوقت" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="TimeRegister_ListView" Caption="Time Register">
+    <ListView Id="TimeRegister_ListView" Caption="سجلات الوقت">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -14956,7 +15069,7 @@
         <ColumnInfo Id="BreakDeductionLateIn" Caption="Break Deduction Late In" />
       </Columns>
     </ListView>
-    <ListView Id="TimeRegister_LookupListView" Caption="Time Register">
+    <ListView Id="TimeRegister_LookupListView" Caption="سجلات الوقت">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
         <ColumnInfo Id="DayDate" Caption="تاريخ اليوم" />
@@ -14992,6 +15105,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
+    <DashboardView Id="TimeSchedule" Caption="الجدول الزمني" />
     <DetailView Id="TimeTransfer_DetailView" Caption="نقل الوقت">
       <Items>
         <PropertyEditor Id="Comments" Caption="تعليقات" />
@@ -15055,7 +15169,7 @@
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DetailView Id="TimeType_DetailView" Caption="نوع الوقت">
+    <DetailView Id="TimeType_DetailView" Caption="نوع مرة">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -15063,8 +15177,15 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="TimeType" Caption="نوع مرة" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="TimeType_ListView" Caption="نوع الوقت">
+    <ListView Id="TimeType_ListView" Caption="نوع مرة">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -15073,12 +15194,12 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="TimeType_LookupListView" Caption="نوع الوقت">
+    <ListView Id="TimeType_LookupListView" Caption="نوع مرة">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DetailView Id="Title_DetailView" Caption="عنوان">
+    <DetailView Id="Title_DetailView" Caption="لقب">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -15094,7 +15215,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="Title_ListView" Caption="عنوان">
+    <ListView Id="Title_ListView" Caption="لقب">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -15103,7 +15224,7 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="Title_LookupListView" Caption="عنوان">
+    <ListView Id="Title_LookupListView" Caption="لقب">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -15121,7 +15242,7 @@
         <PropertyEditor Id="Trainer" Caption="المدرب" />
         <PropertyEditor Id="TrainingCost" Caption="تكلفة التدريب" />
         <PropertyEditor Id="TrainingHours" Caption="Training Hours" />
-        <PropertyEditor Id="TrainingType" Caption="Training Type" />
+        <PropertyEditor Id="TrainingType" Caption="نوع التدريب" />
         <PropertyEditor Id="Venue" Caption="المكان" />
         <PropertyEditor Id="WorkflowStep" Caption="خطوة سير العمل" />
       </Items>
@@ -15140,7 +15261,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="WorkflowStep" Caption="خطوة سير العمل" />
-        <ColumnInfo Id="TrainingType" Caption="Training Type" />
+        <ColumnInfo Id="TrainingType" Caption="نوع التدريب" />
         <ColumnInfo Id="FromDate" Caption="From Date" />
         <ColumnInfo Id="ToDate" Caption="To Date" />
         <ColumnInfo Id="TrainingHours" Caption="Training Hours" />
@@ -15155,7 +15276,7 @@
         <ColumnInfo Id="ApprovalProcessTime" Caption="وقت عملية الموافقة" />
         <ColumnInfo Id="WorkflowStep" Caption="خطوة سير العمل" />
         <ColumnInfo Id="Employee" Caption="موظف" />
-        <ColumnInfo Id="TrainingType" Caption="Training Type" />
+        <ColumnInfo Id="TrainingType" Caption="نوع التدريب" />
         <ColumnInfo Id="FromDate" Caption="From Date" />
         <ColumnInfo Id="ToDate" Caption="To Date" />
         <ColumnInfo Id="TrainingHours" Caption="Training Hours" />
@@ -15167,7 +15288,7 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
     </ListView>
-    <DetailView Id="TrainingType_DetailView" Caption="Training Type">
+    <DetailView Id="TrainingType_DetailView" Caption="نوع التدريب">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -15175,8 +15296,15 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="TrainingType" Caption="نوع التدريب" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="TrainingType_ListView" Caption="Training Type">
+    <ListView Id="TrainingType_ListView" Caption="نوع التدريب">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -15185,12 +15313,12 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="TrainingType_LookupListView" Caption="Training Type">
+    <ListView Id="TrainingType_LookupListView" Caption="نوع التدريب">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
     </ListView>
-    <DetailView Id="TransType_DetailView" Caption="Trans Type">
+    <DetailView Id="TransType_DetailView" Caption="نوع من نقل">
       <Items>
         <PropertyEditor Id="Code" Caption="رمز" />
         <PropertyEditor Id="Locked" Caption="مقفل" />
@@ -15198,8 +15326,15 @@
         <PropertyEditor Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="TransType" Caption="نوع من نقل" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="TransType_ListView" Caption="Trans Type">
+    <ListView Id="TransType_ListView" Caption="نوع من نقل">
       <Columns>
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
@@ -15208,7 +15343,7 @@
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
       </Columns>
     </ListView>
-    <ListView Id="TransType_LookupListView" Caption="Trans Type">
+    <ListView Id="TransType_LookupListView" Caption="نوع من نقل">
       <Columns>
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
       </Columns>
@@ -15850,7 +15985,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="WorkflowRequest_ListView" Caption="لوحة معلومات الموافقة على الطلب">
+    <ListView Id="WorkflowRequest_ListView" Caption="الموافقة على الطلب">
       <Columns>
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Employee" Caption="موظف" />
@@ -15917,6 +16052,11 @@
         <PropertyEditor Id="Active" Caption="نشيط" />
         <PropertyEditor Id="Name" Caption="اسم" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="States_Group" Caption="دولة" />
+        </LayoutGroup>
+      </Layout>
     </DetailView>
     <ListView Id="XpoStateMachine_ListView">
       <Columns>
@@ -16088,7 +16228,7 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="YearlyTimeRegister" Caption="سجل الوقت السنوي" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
       </Columns>
     </ListView>
@@ -16096,7 +16236,7 @@
       <Items>
         <PropertyEditor Id="Locked" Caption="مقفل" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
-        <PropertyEditor Id="TimeType" Caption="نوع الوقت" />
+        <PropertyEditor Id="TimeType" Caption="نوع مرة" />
         <PropertyEditor Id="TimeValue" Caption="Time Value" />
       </Items>
     </DetailView>
@@ -16105,14 +16245,14 @@
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="YearlyTimeRegister" Caption="سجل الوقت السنوي" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
       </Columns>
     </ListView>
     <ListView Id="YearlyTimeRegisterDetail_LookupListView" Caption="تفاصيل سجل الوقت السنوي">
       <Columns>
         <ColumnInfo Id="YearlyTimeRegister" Caption="سجل الوقت السنوي" />
-        <ColumnInfo Id="TimeType" Caption="نوع الوقت" />
+        <ColumnInfo Id="TimeType" Caption="نوع مرة" />
         <ColumnInfo Id="TimeValue" Caption="Time Value" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
