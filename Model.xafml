@@ -820,7 +820,13 @@
         <Items>
           <Item Id="Org Management">
             <Items>
-              <Item Id="OrganizationBankInfo" Caption="Organization Bank Info" ViewId="OrganizationBankInfo_ListView" IsNewNode="True" />
+              <Item Id="JobTitle_ListView" Index="0" />
+              <Item Id="OrganizationBankInfo" Caption="Organization Bank Info" ViewId="OrganizationBankInfo_ListView" Index="1" IsNewNode="True" />
+              <Item Id="OrganizationUnit_ListView" Index="2" />
+              <Item Id="OrganizationUnitType_ListView" Caption="Organization UnitType" ImageName="org-unit" ViewId="OrganizationUnitType_ListView" Index="3" IsNewNode="True" />
+              <Item Id="WorkLocation_ListView" Caption="Work Location" ImageName="org-unit" ViewId="WorkLocation_ListView" Index="4" IsNewNode="True" />
+              <Item Id="CostCenter_ListView" Index="5" ImageName="org-unit" Caption="Cost Center" ViewId="CostCenter_ListView" IsNewNode="True" />
+              <Item Id="Position_ListView" Index="6" />
             </Items>
           </Item>
           <Item Id="Govt Relations">
@@ -1584,6 +1590,17 @@
         <ColumnInfo Id="FirstNameEn" Removed="True" />
       </Columns>
     </ListView>
+    <ListView Id="Employee_OrgAssignment_ListView">
+      <Columns>
+        <ColumnInfo Id="OrgLevel1" Index="8" />
+        <ColumnInfo Id="OrgLevel2" Index="8" />
+        <ColumnInfo Id="OrgLevel3" Index="9" />
+        <ColumnInfo Id="OrgLevel4" Index="10" />
+        <ColumnInfo Id="OrgLevel5" Index="11" />
+        <ColumnInfo Id="OrgLevel6" Index="12" />
+        <ColumnInfo Id="OrgLevel7" Index="13" />
+      </Columns>
+    </ListView>
     <ListView Id="Employee_Task_ListView">
       <Columns>
         <ColumnInfo Id="Comments" MaxLength="500" />
@@ -1892,6 +1909,66 @@
           </LayoutGroup>
           <LayoutGroup Id="EmployeeLoanRecovery_Group" Direction="Vertical" RelativeSize="64.705882352941174">
             <LayoutItem Id="EmployeeLoanRecovery" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="EmployeeOrgAssignment_DetailView">
+      <Items>
+        <PropertyEditor Id="OrganizationUnit" DataSourceCriteria="" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="EmployeeOrgAssignment" RelativeSize="18.06930693069307" Direction="Vertical">
+              <LayoutGroup Id="EmployeeOrgAssignment_col1" RelativeSize="100" Direction="Horizontal">
+                <LayoutGroup Id="Autobedc0805-cc8c-47f7-8e0d-00c55d94ed66" ShowCaption="False" Caption="Autobedc0805-cc8c-47f7-8e0d-00c55d94ed66(5)" Index="0" RelativeSize="36.83373110580748" IsNewNode="True">
+                  <LayoutItem Id="StartDate" ViewItem="StartDate" Index="0" RelativeSize="28.571428571428573" IsNewNode="True" />
+                  <LayoutItem Id="EndDate" ViewItem="EndDate" Index="1" RelativeSize="21.428571428571427" IsNewNode="True" />
+                  <LayoutItem Id="JobTitle" ViewItem="JobTitle" Index="2" RelativeSize="21.428571428571427" IsNewNode="True" />
+                  <LayoutItem Id="OrganizationUnit" ViewItem="OrganizationUnit" Index="3" RelativeSize="28.571428571428573" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto74c7890b-0f75-4ea9-8f0a-126856b4a5ba" ShowCaption="False" Caption="Auto74c7890b-0f75-4ea9-8f0a-126856b4a5ba(10)" Index="1" RelativeSize="32.219570405727922" IsNewNode="True">
+                  <LayoutItem Id="EmployeeGroup" ViewItem="EmployeeGroup" Index="0" RelativeSize="28.571428571428573" IsNewNode="True" />
+                  <LayoutItem Id="EmployeeSubGroup" ViewItem="EmployeeSubGroup" Index="1" RelativeSize="21.428571428571427" IsNewNode="True" />
+                  <LayoutItem Id="PayrollArea" ViewItem="PayrollArea" Index="2" RelativeSize="21.428571428571427" IsNewNode="True" />
+                  <LayoutItem Id="Item1" Index="3" RelativeSize="28.571428571428573" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="EndDate" RelativeSize="13.043478260869565" Index="1" Removed="True" />
+                <LayoutGroup Id="Auto9df2bcfc-587a-4f10-8a17-0b1ebf08b608" ShowCaption="False" Caption="Auto9df2bcfc-587a-4f10-8a17-0b1ebf08b608(15)" Index="2" RelativeSize="30.946698488464598" IsNewNode="True">
+                  <LayoutItem Id="WorkLocation" ViewItem="WorkLocation" Index="0" RelativeSize="28.571428571428573" IsNewNode="True" />
+                  <LayoutItem Id="CostCenter" ViewItem="CostCenter" Index="1" RelativeSize="71.428571428571431" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="JobTitle" RelativeSize="13.043478260869565" Index="2" Removed="True" />
+                <LayoutItem Id="OrganizationUnit" RelativeSize="13.043478260869565" Index="3" Removed="True" />
+                <LayoutItem Id="EmployeeGroup" RelativeSize="13.043478260869565" Index="4" Removed="True" />
+                <LayoutItem Id="EmployeeSubGroup" RelativeSize="13.043478260869565" Index="5" Removed="True" />
+                <LayoutItem Id="PayrollArea" RelativeSize="5.7553956834532372" Index="7" Removed="True" />
+                <LayoutItem Id="StartDate" RelativeSize="17.391304347826086" Removed="True" />
+                <LayoutItem Id="WorkLocation" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="EmployeeOrgAssignment_col2" RelativeSize="51.872509960159363" Caption="EmployeeOrgAssignment_col2" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="OrgLevel2" RelativeSize="17.391304347826086" Index="0" Removed="True" />
+                <LayoutItem Id="OrgLevel3" RelativeSize="17.391304347826086" Index="0" Removed="True" />
+                <LayoutItem Id="OrgLevel4" RelativeSize="17.391304347826086" Index="0" Removed="True" />
+                <LayoutItem Id="OrgLevel5" RelativeSize="17.391304347826086" Index="0" Removed="True" />
+                <LayoutItem Id="OrgLevel6" RelativeSize="17.391304347826086" Index="0" Removed="True" />
+                <LayoutItem Id="OrgLevel7" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="OrgLevel1" RelativeSize="17.391304347826086" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="81.930693069306926" Caption="Organization Hierarchy" Direction="Horizontal" IsNewNode="True">
+              <LayoutGroup Id="Auto962cdef5-fe17-49d2-a3d9-26e9dc958029" ShowCaption="False" Caption="" Index="0" RelativeSize="36.674622116149564" IsNewNode="True">
+                <LayoutItem Id="OrgLevel1" ViewItem="OrgLevel1" Index="0" RelativeSize="5.0955414012738851" IsNewNode="True" />
+                <LayoutItem Id="OrgLevel2" ViewItem="OrgLevel2" Index="1" RelativeSize="3.8216560509554141" IsNewNode="True" />
+                <LayoutItem Id="OrgLevel3" ViewItem="OrgLevel3" Index="2" RelativeSize="3.8216560509554141" IsNewNode="True" />
+                <LayoutItem Id="OrgLevel4" ViewItem="OrgLevel4" Index="3" RelativeSize="3.8216560509554141" IsNewNode="True" />
+                <LayoutItem Id="OrgLevel5" ViewItem="OrgLevel5" Index="4" RelativeSize="3.8216560509554141" IsNewNode="True" />
+                <LayoutItem Id="OrgLevel6" ViewItem="OrgLevel6" Index="5" RelativeSize="3.8216560509554141" IsNewNode="True" />
+                <LayoutItem Id="OrgLevel7" ViewItem="OrgLevel7" Index="6" RelativeSize="75.796178343949038" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item3" Index="1" RelativeSize="63.325377883850436" IsNewNode="True" />
+            </LayoutGroup>
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
